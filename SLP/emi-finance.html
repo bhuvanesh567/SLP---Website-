@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>EMI & Finance — Sri Lakshmi Plaza | No Cost EMI on Smartphones Vijayawada</title>
+  <meta name="description" content="Buy smartphones on No Cost EMI at Sri Lakshmi Plaza, Vijayawada. 0% interest, 3-24 months, HDFC SBI ICICI Axis bank cards. Easy monthly installments."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <style>
+    .emi-hero{min-height:50vh;display:flex;align-items:center;padding:calc(var(--space-24)+80px) 0 var(--space-16);background:linear-gradient(135deg,#000 0%,#050510 40%);position:relative;overflow:hidden;text-align:center;}
+    .emi-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(37,99,235,.2) 0%,transparent 70%);}
+    .emi-content{padding:var(--section-pad);}
+    .emi-layout{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:start;}
+    .emi-calc{background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);padding:var(--space-10);}
+    .calc-label{font-size:var(--text-sm);font-weight:600;color:var(--c-gray-pale);margin-bottom:var(--space-2);display:block;}
+    .calc-input,.calc-select{width:100%;padding:var(--space-4) var(--space-5);background:var(--c-dark-3);border:1px solid var(--c-dark-border);border-radius:var(--r-lg);color:var(--c-white);font-family:var(--font-sans);font-size:var(--text-sm);outline:none;transition:border-color var(--t-base);margin-bottom:var(--space-6);}
+    .calc-input:focus,.calc-select:focus{border-color:var(--c-blue);}
+    .emi-result{background:linear-gradient(135deg,rgba(37,99,235,.1),rgba(6,182,212,.05));border:1px solid rgba(37,99,235,.2);border-radius:var(--r-xl);padding:var(--space-8);margin-top:var(--space-6);}
+    .emi-result-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);}
+    .emi-result-item{text-align:center;}
+    .emi-result-val{font-family:var(--font-display);font-size:1.8rem;font-weight:900;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .emi-result-label{font-size:var(--text-xs);color:var(--c-gray-mid);margin-top:var(--space-1);text-transform:uppercase;letter-spacing:.05em;}
+    .tenure-chips{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-bottom:var(--space-6);}
+    .tenure-chip{padding:var(--space-2) var(--space-4);background:var(--c-dark-3);border:1px solid var(--c-dark-border);border-radius:var(--r-full);font-size:var(--text-sm);cursor:pointer;color:var(--c-gray-light);transition:all var(--t-base);}
+    .tenure-chip.active,.tenure-chip:hover{background:rgba(37,99,235,.15);border-color:rgba(37,99,235,.4);color:var(--c-blue-light);}
+    .bank-partners{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);margin-top:var(--space-8);}
+    .bank-partner{background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-xl);padding:var(--space-5);text-align:center;font-size:var(--text-sm);font-weight:600;color:var(--c-white);}
+    .bank-partner-logo{font-size:1.75rem;display:block;margin-bottom:var(--space-2);}
+    .emi-table{width:100%;border-collapse:collapse;margin-top:var(--space-8);}
+    .emi-table th{background:var(--c-dark-3);padding:var(--space-4) var(--space-5);text-align:left;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--c-gray-mid);border-bottom:1px solid var(--c-dark-border);}
+    .emi-table td{padding:var(--space-4) var(--space-5);border-bottom:1px solid var(--c-dark-border);font-size:var(--text-sm);color:var(--c-gray-light);}
+    .emi-table tr:hover td{background:rgba(255,255,255,.02);}
+    .emi-table .price-current{color:var(--c-white);font-weight:700;}
+    @media(max-width:768px){.emi-layout{grid-template-columns:1fr;}.bank-partners{grid-template-columns:repeat(2,1fr);}.emi-result-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <div id="loading-screen"><div class="loader-logo">Sri Lakshmi Plaza</div><div class="loader-bar"><div class="loader-bar-fill"></div></div><div class="loader-text">Loading...</div></div>
+  <div id="scroll-progress"></div>
+  <div id="cursor-dot"></div><div id="cursor-outline"></div>
+
+  <nav class="navbar"><div class="container"><div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza Logo" class="nav-logo-img" /></a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="smartphones.html" class="nav-link">Smartphones</a></li>
+      <li><a href="offers.html" class="nav-link">Offers</a></li>
+      <li><a href="emi-finance.html" class="nav-link active">EMI</a></li>
+      <li><a href="repair.html" class="nav-link">Repair</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-search-btn" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <a href="contact.html" class="nav-cta">Visit Store</a>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></div></nav>
+  <div class="search-overlay"><div class="search-box"><input type="search" class="search-input" placeholder="Search..."/><button class="search-close">✕</button></div></div>
+  <div class="nav-drawer-overlay"></div>
+  <nav class="nav-drawer"><ul class="nav-drawer-links">
+    <li><a href="index.html" class="nav-drawer-link"><span>Home</span></a></li>
+    <li><a href="smartphones.html" class="nav-drawer-link"><span>Smartphones</span></a></li>
+    <li><a href="emi-finance.html" class="nav-drawer-link active"><span>EMI & Finance</span></a></li>
+    <li><a href="contact.html" class="nav-drawer-link"><span>Contact</span></a></li>
+  </ul></nav>
+
+  <!-- Hero -->
+  <section class="emi-hero">
+    <div class="container" style="position:relative;z-index:1;max-width:800px;">
+      <div class="breadcrumb reveal" style="justify-content:center;"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>EMI & Finance</span></div>
+      <div class="section-label reveal delay-100" style="margin:0 auto var(--space-5);">💳 Easy Finance</div>
+      <h1 class="reveal delay-200">No Cost <span class="gradient-text">EMI Options</span></h1>
+      <p class="section-subtitle reveal delay-300" style="margin:0 auto;">Buy your dream smartphone with 0% interest EMI. Flexible tenures from 3 to 24 months on all major bank cards.</p>
+      <div style="margin-top:var(--space-8);" class="reveal delay-400">
+        <div style="display:inline-flex;align-items:center;gap:var(--space-4);background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2);border-radius:var(--r-xl);padding:var(--space-5) var(--space-8);">
+          <span style="font-size:3rem;font-weight:900;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;">0%</span>
+          <div style="text-align:left;"><div style="font-weight:800;font-size:var(--text-lg);color:var(--c-white);">Zero Interest</div><div style="font-size:var(--text-sm);color:var(--c-gray-light);">No Cost EMI Available</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMI Calculator -->
+  <section class="emi-content">
+    <div class="container">
+      <div class="emi-layout">
+        <!-- Calculator -->
+        <div class="emi-calc reveal-left">
+          <div class="section-label" style="margin-bottom:var(--space-5);">🧮 EMI Calculator</div>
+          <h2 style="font-size:var(--text-2xl);font-weight:800;margin-bottom:var(--space-8);">Calculate Your <span class="gradient-text">Monthly EMI</span></h2>
+
+          <label class="calc-label">Phone Price (₹)</label>
+          <input type="number" class="calc-input" id="phone-price" placeholder="Enter phone price" value="69999" min="5000" oninput="calcEMI()"/>
+
+          <label class="calc-label">Down Payment (₹)</label>
+          <input type="number" class="calc-input" id="down-payment" placeholder="Down payment amount" value="0" oninput="calcEMI()"/>
+
+          <label class="calc-label">Select Tenure</label>
+          <div class="tenure-chips">
+            <button class="tenure-chip" onclick="setTenure(3)" id="t3">3 Months</button>
+            <button class="tenure-chip active" onclick="setTenure(6)" id="t6">6 Months</button>
+            <button class="tenure-chip" onclick="setTenure(9)" id="t9">9 Months</button>
+            <button class="tenure-chip" onclick="setTenure(12)" id="t12">12 Months</button>
+            <button class="tenure-chip" onclick="setTenure(18)" id="t18">18 Months</button>
+            <button class="tenure-chip" onclick="setTenure(24)" id="t24">24 Months</button>
+          </div>
+
+          <div class="emi-result">
+            <div class="emi-result-grid">
+              <div class="emi-result-item">
+                <div class="emi-result-val" id="emi-amount">₹11,667</div>
+                <div class="emi-result-label">Monthly EMI</div>
+              </div>
+              <div class="emi-result-item">
+                <div class="emi-result-val" id="total-amount">₹69,999</div>
+                <div class="emi-result-label">Total Amount</div>
+              </div>
+            </div>
+            <p style="font-size:var(--text-xs);color:var(--c-gray-mid);text-align:center;margin-top:var(--space-4);">* No Cost EMI — 0% interest. Exact EMI depends on bank T&C.</p>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:var(--space-6);text-align:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.6 1.37h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9A16 16 0 0 0 15 16.09l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Apply for EMI at Store
+          </a>
+        </div>
+
+        <!-- Info Side -->
+        <div class="reveal-right">
+          <div class="section-label" style="margin-bottom:var(--space-5);">🏦 Partner Banks</div>
+          <h2 style="font-size:var(--text-2xl);font-weight:800;margin-bottom:var(--space-6);">EMI on <span class="gradient-text">All Major Banks</span></h2>
+          <div class="bank-partners">
+            <div class="bank-partner"><span class="bank-partner-logo">🏦</span>HDFC</div>
+            <div class="bank-partner"><span class="bank-partner-logo">🏛️</span>SBI</div>
+            <div class="bank-partner"><span class="bank-partner-logo">🏢</span>ICICI</div>
+            <div class="bank-partner"><span class="bank-partner-logo">⚡</span>Axis</div>
+            <div class="bank-partner"><span class="bank-partner-logo">💎</span>Kotak</div>
+            <div class="bank-partner"><span class="bank-partner-logo">🔵</span>Amex</div>
+            <div class="bank-partner"><span class="bank-partner-logo">🔶</span>Bajaj</div>
+            <div class="bank-partner"><span class="bank-partner-logo">🌟</span>More+</div>
+          </div>
+
+          <!-- EMI Table for popular phones -->
+          <h3 style="font-size:var(--text-xl);font-weight:700;margin-top:var(--space-10);margin-bottom:var(--space-4);">Popular Phone <span class="gradient-text">EMI Plans</span></h3>
+          <div style="overflow-x:auto;">
+            <table class="emi-table">
+              <thead>
+                <tr>
+                  <th>Phone</th>
+                  <th>Price</th>
+                  <th>6 Months</th>
+                  <th>12 Months</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>iPhone 16 Pro Max</td>
+                  <td class="price-current">₹1,34,900</td>
+                  <td>₹22,484/mo</td>
+                  <td>₹11,242/mo</td>
+                </tr>
+                <tr>
+                  <td>Samsung S25 Ultra</td>
+                  <td class="price-current">₹1,29,999</td>
+                  <td>₹21,667/mo</td>
+                  <td>₹10,833/mo</td>
+                </tr>
+                <tr>
+                  <td>OnePlus 13</td>
+                  <td class="price-current">₹69,999</td>
+                  <td>₹11,667/mo</td>
+                  <td>₹5,834/mo</td>
+                </tr>
+                <tr>
+                  <td>Google Pixel 9 Pro</td>
+                  <td class="price-current">₹1,09,999</td>
+                  <td>₹18,334/mo</td>
+                  <td>₹9,167/mo</td>
+                </tr>
+                <tr>
+                  <td>Nothing Phone (3)</td>
+                  <td class="price-current">₹59,999</td>
+                  <td>₹10,000/mo</td>
+                  <td>₹5,000/mo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:var(--text-xs);color:var(--c-gray-mid);margin-top:var(--space-4);">* Based on No Cost EMI (0% interest). Actual EMI may vary based on bank T&C and processing fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why No Cost EMI -->
+  <section style="padding:0 0 var(--section-pad-md);background:var(--c-dark-2);">
+    <div class="container" style="padding-top:var(--section-pad-md);">
+      <div class="section-header center">
+        <div class="section-label reveal">✅ Benefits</div>
+        <h2 class="section-title reveal delay-100">Why Choose <span class="gradient-text">No Cost EMI</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);" class="reveal">
+        <div style="background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);padding:var(--space-8);text-align:center;">
+          <div style="font-size:3rem;margin-bottom:var(--space-5);">0️⃣</div>
+          <h3 style="font-size:var(--text-lg);font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);">Zero Interest</h3>
+          <p class="text-muted text-sm">Pay exactly what the phone costs. No extra interest or hidden charges on No Cost EMI.</p>
+        </div>
+        <div style="background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);padding:var(--space-8);text-align:center;">
+          <div style="font-size:3rem;margin-bottom:var(--space-5);">⚡</div>
+          <h3 style="font-size:var(--text-lg);font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);">Instant Approval</h3>
+          <p class="text-muted text-sm">Get EMI approved instantly at our store using your existing credit card. No paperwork.</p>
+        </div>
+        <div style="background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);padding:var(--space-8);text-align:center;">
+          <div style="font-size:3rem;margin-bottom:var(--space-5);">📅</div>
+          <h3 style="font-size:var(--text-lg);font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);">Flexible Tenures</h3>
+          <p class="text-muted text-sm">Choose from 3 to 24 month tenures. Pick what fits your monthly budget perfectly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container">
+    <div style="text-align:center;padding:var(--space-10) 0;border-bottom:1px solid var(--glass-border);margin-bottom:var(--space-6);">
+      <a href="index.html" style="display:inline-block;"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza" style="height:48px;width:auto;object-fit:contain;background:rgba(255,255,255,0.95);border-radius:8px;padding:4px 12px;" /></a>
+    </div>
+    <div class="footer-bottom"><p class="footer-copyright">© 2024 Sri Lakshmi Plaza. All rights reserved.</p><div class="footer-legal"><a href="index.html">Home</a><a href="contact.html">Contact</a></div></div>
+  </div></footer>
+
+  <div id="whatsapp-float"><a href="https://wa.me/919885125978" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a></div>
+  <button id="back-to-top" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  <div id="cookie-banner"><p>🍪 We use cookies.</p><div class="cookie-actions"><button id="accept-cookies" class="btn btn-primary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Accept</button><button id="decline-cookies" class="btn btn-secondary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Decline</button></div></div>
+  <script src="js/main.js"></script>
+  <script>
+    let selectedTenure = 6;
+    function setTenure(t) {
+      selectedTenure = t;
+      document.querySelectorAll('.tenure-chip').forEach(c => c.classList.remove('active'));
+      document.getElementById('t'+t)?.classList.add('active');
+      calcEMI();
+    }
+    function calcEMI() {
+      const price = parseFloat(document.getElementById('phone-price').value) || 0;
+      const down = parseFloat(document.getElementById('down-payment').value) || 0;
+      const principal = price - down;
+      const emi = Math.ceil(principal / selectedTenure);
+      document.getElementById('emi-amount').textContent = '₹'+emi.toLocaleString('en-IN');
+      document.getElementById('total-amount').textContent = '₹'+principal.toLocaleString('en-IN');
+    }
+    calcEMI();
+  </script>
+</body>
+</html>
+
+
+

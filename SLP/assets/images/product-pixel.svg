@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="580" viewBox="0 0 300 580">
+  <defs>
+    <linearGradient id="pxbody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="50%" stop-color="#d2e3fc"/>
+      <stop offset="100%" stop-color="#bbd1fb"/>
+    </linearGradient>
+    <filter id="pxshadow">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="rgba(66,133,244,0.4)"/>
+    </filter>
+  </defs>
+
+  <!-- Phone body - Pixel's signature porcelain/blue -->
+  <rect x="20" y="10" width="260" height="560" rx="26" ry="26" fill="url(#pxbody)" filter="url(#pxshadow)"/>
+  <rect x="20" y="10" width="260" height="560" rx="26" ry="26" fill="none" stroke="rgba(66,133,244,0.3)" stroke-width="1"/>
+
+  <!-- Pixel's camera bar - horizontal stripe across top -->
+  <rect x="20" y="10" width="260" height="90" rx="26" fill="#1a1a2e"/>
+  <rect x="20" y="80" width="260" height="20" fill="#1a1a2e"/>
+
+  <!-- Screen -->
+  <rect x="28" y="18" width="244" height="542" rx="20" ry="20" fill="#0d1117"/>
+  <rect x="28" y="18" width="244" height="72" rx="20" fill="#1a1a2e"/>
+
+  <!-- Punch hole camera -->
+  <circle cx="150" cy="48" r="8" fill="#000"/>
+  <circle cx="150" cy="48" r="5" fill="#111"/>
+
+  <!-- Screen glow - Google blue -->
+  <circle cx="150" cy="300" r="110" fill="rgba(66,133,244,0.2)" opacity="0.6"/>
+
+  <!-- Time -->
+  <text x="150" y="170" font-family="Arial,sans-serif" font-size="56" font-weight="200" fill="white" text-anchor="middle">9:41</text>
+  <text x="150" y="198" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" text-anchor="middle">Saturday, 5 July</text>
+
+  <!-- Google G logo hint -->
+  <text x="150" y="265" font-family="Arial,sans-serif" font-size="40" font-weight="700" fill="rgba(66,133,244,0.5)" text-anchor="middle">G</text>
+
+  <!-- App icons -->
+  <rect x="50" y="335" width="44" height="44" rx="12" fill="rgba(66,133,244,0.4)"/>
+  <rect x="110" y="335" width="44" height="44" rx="12" fill="rgba(52,168,83,0.4)"/>
+  <rect x="170" y="335" width="44" height="44" rx="12" fill="rgba(251,188,4,0.4)"/>
+  <rect x="230" y="335" width="44" height="44" rx="12" fill="rgba(234,67,53,0.4)"/>
+  <rect x="50" y="392" width="44" height="44" rx="12" fill="rgba(255,255,255,0.1)"/>
+  <rect x="110" y="392" width="44" height="44" rx="12" fill="rgba(66,133,244,0.3)"/>
+  <rect x="170" y="392" width="44" height="44" rx="12" fill="rgba(52,168,83,0.3)"/>
+  <rect x="230" y="392" width="44" height="44" rx="12" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Dock -->
+  <rect x="34" y="462" width="232" height="64" rx="20" fill="rgba(255,255,255,0.08)"/>
+  <rect x="48" y="474" width="44" height="44" rx="12" fill="rgba(66,133,244,0.7)"/>
+  <rect x="108" y="474" width="44" height="44" rx="12" fill="rgba(52,168,83,0.7)"/>
+  <rect x="168" y="474" width="44" height="44" rx="12" fill="rgba(234,67,53,0.7)"/>
+  <rect x="228" y="474" width="44" height="44" rx="12" fill="rgba(251,188,4,0.7)"/>
+
+  <!-- Camera bar with 3 lenses -->
+  <circle cx="95" cy="55" r="22" fill="#0a0a1a"/>
+  <circle cx="95" cy="55" r="15" fill="#1a2a4a"/>
+  <circle cx="95" cy="55" r="8" fill="#050a15"/>
+  <circle cx="88" cy="48" r="2.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="150" cy="55" r="18" fill="#0a0a1a"/>
+  <circle cx="150" cy="55" r="12" fill="#1a2a4a"/>
+  <circle cx="150" cy="55" r="6" fill="#050a15"/>
+  <circle cx="205" cy="55" r="12" fill="#0a0a1a"/>
+  <circle cx="205" cy="55" r="8" fill="#1a2a4a"/>
+  <!-- Temp sensor -->
+  <circle cx="230" cy="42" r="6" fill="#222" stroke="#333" stroke-width="1"/>
+  <text x="150" y="88" font-family="Arial,sans-serif" font-size="7" fill="rgba(150,180,255,0.5)" text-anchor="middle">50MP · 48MP · 48MP</text>
+
+  <text x="150" y="548" font-family="Arial,sans-serif" font-size="11" fill="rgba(100,150,230,0.7)" text-anchor="middle">Google Pixel 9 Pro</text>
+</svg>

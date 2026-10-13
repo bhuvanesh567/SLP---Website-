@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Phone Repair Services — Sri Lakshmi Plaza | Screen, Battery, Software Fix Vijayawada</title>
+  <meta name="description" content="Expert phone repair services in Vijayawada. Screen replacement, battery replacement, software issues, data transfer. Quick turnaround with genuine parts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <style>
+    .repair-hero{min-height:50vh;display:flex;align-items:center;padding:calc(var(--space-24)+80px) 0 var(--space-16);background:linear-gradient(135deg,#000 0%,#0a0014 40%,#07000e 100%);position:relative;overflow:hidden;}
+    .repair-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(139,92,246,.15) 0%,transparent 70%);}
+    .repair-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);padding:var(--section-pad) 0;}
+    .repair-card{background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);padding:var(--space-8);position:relative;overflow:hidden;transition:all .4s ease;}
+    .repair-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-primary);opacity:0;transition:opacity .3s;}
+    .repair-card:hover{transform:translateY(-6px);border-color:rgba(37,99,235,.25);box-shadow:var(--shadow-glow);}
+    .repair-card:hover::before{opacity:1;}
+    .repair-icon{width:64px;height:64px;border-radius:var(--r-xl);background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-5);transition:all var(--t-spring);}
+    .repair-card:hover .repair-icon{background:var(--grad-primary);border-color:transparent;transform:scale(1.1);}
+    .repair-icon svg{width:28px;height:28px;color:var(--c-blue-light);}
+    .repair-card:hover .repair-icon svg{color:white;}
+    .repair-card h3{font-size:var(--text-xl);font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);}
+    .repair-card p{font-size:var(--text-sm);color:var(--c-gray-light);line-height:1.7;margin-bottom:var(--space-5);}
+    .repair-price{font-size:var(--text-lg);font-weight:800;color:var(--c-blue-light);margin-bottom:var(--space-5);}
+    .repair-features{list-style:none;display:flex;flex-direction:column;gap:var(--space-2);}
+    .repair-feature{display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--c-gray-light);}
+    .repair-feature::before{content:'✓';color:#10b981;font-weight:700;flex-shrink:0;}
+    .process-section{padding:var(--section-pad);background:var(--c-dark-2);}
+    .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-6);position:relative;}
+    .process-steps::before{content:'';position:absolute;top:40px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,var(--c-blue),var(--c-electric));z-index:0;}
+    .step{text-align:center;position:relative;z-index:1;}
+    .step-num{width:80px;height:80px;border-radius:50%;background:var(--grad-primary);display:flex;align-items:center;justify-content:center;font-size:var(--text-2xl);font-weight:900;color:white;margin:0 auto var(--space-5);box-shadow:0 8px 32px rgba(37,99,235,.4);}
+    .step h4{font-size:var(--text-base);font-weight:700;color:var(--c-white);margin-bottom:var(--space-2);}
+    .step p{font-size:var(--text-sm);color:var(--c-gray-light);}
+    .guarantee-section{padding:var(--section-pad);}
+    .guarantee-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);}
+    .guarantee-card{text-align:center;padding:var(--space-8);background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);}
+    .guarantee-icon{font-size:3rem;display:block;margin-bottom:var(--space-5);}
+    @media(max-width:900px){.repair-grid{grid-template-columns:repeat(2,1fr);}.process-steps{grid-template-columns:repeat(2,1fr);}.process-steps::before{display:none;}.guarantee-grid{grid-template-columns:1fr;}}
+    @media(max-width:480px){.repair-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <div id="loading-screen"><div class="loader-logo">Sri Lakshmi Plaza</div><div class="loader-bar"><div class="loader-bar-fill"></div></div><div class="loader-text">Loading...</div></div>
+  <div id="scroll-progress"></div>
+  <div id="cursor-dot"></div><div id="cursor-outline"></div>
+
+  <nav class="navbar"><div class="container"><div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza Logo" class="nav-logo-img" /></a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="smartphones.html" class="nav-link">Smartphones</a></li>
+      <li><a href="accessories.html" class="nav-link">Accessories</a></li>
+      <li><a href="offers.html" class="nav-link">Offers</a></li>
+      <li><a href="repair.html" class="nav-link active">Repair</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-search-btn" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <a href="contact.html" class="nav-cta">Book Repair</a>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></div></nav>
+  <div class="search-overlay"><div class="search-box"><input type="search" class="search-input" placeholder="Search..."/><button class="search-close">✕</button></div></div>
+  <div class="nav-drawer-overlay"></div>
+  <nav class="nav-drawer"><ul class="nav-drawer-links">
+    <li><a href="index.html" class="nav-drawer-link"><span>Home</span></a></li>
+    <li><a href="smartphones.html" class="nav-drawer-link"><span>Smartphones</span></a></li>
+    <li><a href="repair.html" class="nav-drawer-link active"><span>Repair Services</span></a></li>
+    <li><a href="about.html" class="nav-drawer-link"><span>About</span></a></li>
+    <li><a href="contact.html" class="nav-drawer-link"><span>Contact</span></a></li>
+  </ul></nav>
+
+  <!-- Repair Hero -->
+  <section class="repair-hero">
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="breadcrumb reveal"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Repair Services</span></div>
+      <div class="section-label reveal delay-100" style="background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:#a78bfa;">
+        🔧 Expert Repair
+      </div>
+      <h1 class="reveal delay-200" style="max-width:700px;">Professional <span class="gradient-text">Phone Repair</span> Services</h1>
+      <p class="section-subtitle reveal delay-300">Certified technicians, genuine parts, quick turnaround. Most repairs completed in just 2-4 hours.</p>
+      <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;margin-top:var(--space-8);" class="reveal delay-400">
+        <a href="contact.html" class="btn btn-primary magnetic">Book Repair</a>
+        <a href="https://wa.me/919885125978?text=Hello!%20I%20need%20phone%20repair%20service." target="_blank" class="btn btn-secondary magnetic">WhatsApp for Repair</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repair Services Grid -->
+  <section style="padding:var(--section-pad);">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">🛠️ Our Services</div>
+        <h2 class="section-title reveal delay-100">All <span class="gradient-text">Repair Services</span></h2>
+        <p class="section-subtitle reveal delay-200">Comprehensive repair solutions for all major smartphone brands.</p>
+      </div>
+      <div class="repair-grid">
+        <div class="repair-card reveal">
+          <div class="repair-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3>Screen Replacement</h3>
+          <p>Cracked or broken screen? We replace with original quality displays. Comes with 30-day replacement warranty.</p>
+          <div class="repair-price">Starting ₹1,499</div>
+          <ul class="repair-features">
+            <li class="repair-feature">Original/OEM quality screens</li>
+            <li class="repair-feature">30-day warranty on parts</li>
+            <li class="repair-feature">2-3 hour turnaround</li>
+            <li class="repair-feature">All major brands supported</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:var(--space-6);text-align:center;">Book Now</a>
+        </div>
+
+        <div class="repair-card reveal delay-100">
+          <div class="repair-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"/><line x1="23" y1="13" x2="23" y2="11"/><polyline points="11 6 7 12 13 12 9 18"/></svg></div>
+          <h3>Battery Replacement</h3>
+          <p>Phone draining fast or not holding charge? Get a fresh battery with original capacity. Restore your phone to new.</p>
+          <div class="repair-price">Starting ₹799</div>
+          <ul class="repair-features">
+            <li class="repair-feature">Original capacity batteries</li>
+            <li class="repair-feature">60-day warranty</li>
+            <li class="repair-feature">1-2 hour service</li>
+            <li class="repair-feature">Battery health report</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:var(--space-6);">Book Now</a>
+        </div>
+
+        <div class="repair-card reveal delay-200">
+          <div class="repair-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Software Issues</h3>
+          <p>Stuck in a boot loop, virus removal, app crashes, or OS update failure? Our software experts fix all issues.</p>
+          <div class="repair-price">Starting ₹299</div>
+          <ul class="repair-features">
+            <li class="repair-feature">OS reinstallation</li>
+            <li class="repair-feature">Virus & malware removal</li>
+            <li class="repair-feature">App conflict resolution</li>
+            <li class="repair-feature">Factory reset assistance</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:var(--space-6);">Book Now</a>
+        </div>
+
+        <div class="repair-card reveal delay-100">
+          <div class="repair-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Water Damage Repair</h3>
+          <p>Phone fell in water? Don't panic. Bring it to us immediately. Our technicians handle liquid damage professionally.</p>
+          <div class="repair-price">Starting ₹999</div>
+          <ul class="repair-features">
+            <li class="repair-feature">Immediate diagnostic</li>
+            <li class="repair-feature">Professional drying process</li>
+            <li class="repair-feature">Corrosion cleaning</li>
+            <li class="repair-feature">Component-level repair</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:var(--space-6);">Book Now</a>
+        </div>
+
+        <div class="repair-card reveal delay-200">
+          <div class="repair-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+          <h3>Data Transfer</h3>
+          <p>Switching to a new phone? We safely transfer all your contacts, photos, apps, documents, and settings. Zero data loss.</p>
+          <div class="repair-price">Starting ₹199</div>
+          <ul class="repair-features">
+            <li class="repair-feature">Contacts & messages</li>
+            <li class="repair-feature">Photos & videos</li>
+            <li class="repair-feature">App data & settings</li>
+            <li class="repair-feature">100% data security</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:var(--space-6);">Book Now</a>
+        </div>
+
+        <div class="repair-card reveal delay-300">
+          <div class="repair-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>Charging Port & Jack</h3>
+          <p>Phone not charging? Headphone jack not working? We fix all connector and port issues with original parts.</p>
+          <div class="repair-price">Starting ₹599</div>
+          <ul class="repair-features">
+            <li class="repair-feature">USB-C / Lightning ports</li>
+            <li class="repair-feature">3.5mm audio jack</li>
+            <li class="repair-feature">Original components</li>
+            <li class="repair-feature">Same-day service</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:var(--space-6);">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">🔄 Our Process</div>
+        <h2 class="section-title reveal delay-100">Simple <span class="gradient-text">4-Step Process</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h4>Bring Your Phone</h4>
+          <p>Visit our store or schedule a pickup. No appointment needed for walk-ins.</p>
+        </div>
+        <div class="step reveal delay-100">
+          <div class="step-num">2</div>
+          <h4>Free Diagnosis</h4>
+          <p>Our expert technicians inspect your phone and provide a detailed quote — no hidden charges.</p>
+        </div>
+        <div class="step reveal delay-200">
+          <div class="step-num">3</div>
+          <h4>Expert Repair</h4>
+          <p>Certified technicians fix your phone using genuine parts with precision and care.</p>
+        </div>
+        <div class="step reveal delay-300">
+          <div class="step-num">4</div>
+          <h4>Quality Check</h4>
+          <p>Thorough testing before handover. We ensure everything works perfectly before you leave.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="guarantee-section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">🛡️ Our Guarantee</div>
+        <h2 class="section-title reveal delay-100">Why Trust Our <span class="gradient-text">Repair Service</span></h2>
+      </div>
+      <div class="guarantee-grid">
+        <div class="guarantee-card reveal">
+          <span class="guarantee-icon">⏱️</span>
+          <h3 class="why-title">Fast Turnaround</h3>
+          <p class="why-desc">Most repairs completed within 2-4 hours. Screen replacements and battery changes often done in under 2 hours.</p>
+        </div>
+        <div class="guarantee-card reveal delay-100">
+          <span class="guarantee-icon">🔩</span>
+          <h3 class="why-title">Genuine Parts</h3>
+          <p class="why-desc">We use original quality or OEM-grade parts for all repairs. No cheap knockoffs that damage your phone further.</p>
+        </div>
+        <div class="guarantee-card reveal delay-200">
+          <span class="guarantee-icon">📋</span>
+          <h3 class="why-title">Warranty on Repairs</h3>
+          <p class="why-desc">All our repairs come with a parts and service warranty. Screen replacements carry 30-day warranty, batteries 60-day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Repair CTA -->
+  <section style="padding:0 0 var(--space-24);">
+    <div class="container">
+      <div style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:var(--r-2xl);padding:var(--space-16);text-align:center;" class="reveal-scale">
+        <h2 class="section-title" style="margin-bottom:var(--space-4);">Need a Repair? <span style="color:#a78bfa;">Contact Us Now</span></h2>
+        <p style="color:rgba(255,255,255,.75);max-width:500px;margin:0 auto var(--space-8);">Walk in to our store or WhatsApp us with your phone's issue. We'll get back to you within minutes.</p>
+        <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary magnetic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/></svg>
+            Visit Store
+          </a>
+          <a href="https://wa.me/919885125978?text=Hello!%20I%20need%20phone%20repair.%20My%20phone%20is:" target="_blank" class="btn btn-secondary magnetic">
+            💬 WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container">
+    <div style="text-align:center;padding:var(--space-10) 0;border-bottom:1px solid var(--glass-border);margin-bottom:var(--space-6);">
+      <a href="index.html" style="display:inline-block;"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza" style="height:48px;width:auto;object-fit:contain;background:rgba(255,255,255,0.95);border-radius:8px;padding:4px 12px;" /></a>
+    </div>
+    <div class="footer-bottom"><p class="footer-copyright">© 2024 Sri Lakshmi Plaza. All rights reserved.</p><div class="footer-legal"><a href="index.html">Home</a><a href="contact.html">Contact</a></div></div>
+  </div></footer>
+
+  <div id="whatsapp-float"><a href="https://wa.me/919885125978?text=Hello!%20I%20need%20phone%20repair." target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a></div>
+  <button id="back-to-top" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  <div id="cookie-banner"><p>🍪 We use cookies.</p><div class="cookie-actions"><button id="accept-cookies" class="btn btn-primary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Accept</button><button id="decline-cookies" class="btn btn-secondary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Decline</button></div></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

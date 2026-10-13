@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Sri Lakshmi Plaza — Premium Mobile Phone Store in Vijayawada</title>
+  <meta name="description" content="Sri Lakshmi Plaza is Vijayawada's most trusted premium mobile phone store. Shop the latest iPhones, Samsung Galaxy, OnePlus, and more with genuine warranty, EMI options, and expert support." />
+  <meta name="keywords" content="mobile phone store Vijayawada, iPhone Vijayawada, Samsung store Andhra Pradesh, buy smartphone Vijayawada, Sri Lakshmi Plaza, Labbipet phone shop" />
+  <meta name="author" content="Sri Lakshmi Plaza" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.srilakshmiplaza.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sri Lakshmi Plaza — Premium Mobile Phone Store in Vijayawada" />
+  <meta property="og:description" content="Experience premium smartphones like never before. Vijayawada's #1 mobile phone destination." />
+  <meta property="og:url" content="https://www.srilakshmiplaza.com/" />
+  <meta property="og:image" content="assets/images/slp-logo.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sri Lakshmi Plaza — Premium Mobile Phones" />
+  <meta name="twitter:description" content="Vijayawada's most trusted premium mobile phone store." />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Sri Lakshmi Plaza",
+    "description": "Premium mobile phone store in Vijayawada, Andhra Pradesh",
+    "url": "https://www.srilakshmiplaza.com",
+    "telephone": "+91 98851 25978",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Door No: 40, 3/1-46, Murali Fortune Road, Behind RS Brothers",
+      "addressLocality": "Labbipet, Sidhartha Nagar",
+      "addressRegion": "Andhra Pradesh",
+      "postalCode": "520010",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 16.5193,
+      "longitude": 80.6305
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:00",
+        "closes": "19:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "5000",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <!-- Image Placeholder System -->
+  <link rel="stylesheet" href="css/image-placeholders.css" />
+
+  <style>
+    /* ── HERO PHONE FALLBACK STYLING ── */
+    .hero-phone-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, #1a1a2e, #16213e);
+      border-radius: 40px;
+      border: 1px solid rgba(255,255,255,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-phone-placeholder::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+    }
+    .hero-phone-screen {
+      position: absolute;
+      inset: 16px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #0a0a2e 0%, #1a237e 50%, #0d47a1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .phone-screen-content {
+      width: 60%;
+      height: 6px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+    }
+    .phone-status-bar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .phone-dot {
+      width: 8px;
+      height: 8px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+    }
+
+    /* ── WHY CHOOSE US ── */
+    .why-section {
+      padding: var(--section-pad);
+      background: var(--c-dark-2);
+    }
+
+    /* ── STORE SECTION PILL ── */
+    .location-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      color: var(--c-gray-light);
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r-full);
+      padding: var(--space-2) var(--space-4);
+      margin-top: var(--space-4);
+    }
+
+    /* ── HERO GLOW ORBS ── */
+    .glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .glow-orb-1 {
+      width: 500px;
+      height: 500px;
+      background: rgba(37, 99, 235, 0.12);
+      top: -100px;
+      right: -100px;
+    }
+
+    .glow-orb-2 {
+      width: 400px;
+      height: 400px;
+      background: rgba(6, 182, 212, 0.08);
+      bottom: -50px;
+      left: -100px;
+    }
+
+    /* ── BRAND INITIAL LOGOS ── */
+    .brand-initial {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: var(--c-white);
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+    }
+
+    /* ── OFFER CARD COLORS ── */
+    .offer-1 { background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%); }
+    .offer-2 { background: linear-gradient(135deg, #064e3b 0%, #059669 100%); }
+    .offer-3 { background: linear-gradient(135deg, #7c2d12 0%, #ea580c 100%); }
+    .offer-4 { background: linear-gradient(135deg, #581c87 0%, #9333ea 100%); }
+    .offer-5 { background: linear-gradient(135deg, #831843 0%, #e11d48 100%); }
+
+    /* ── HERO CALL FLOATING BUTTON ── */
+    .hero-quick-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+    }
+
+    /* ── GRADIENT DIVIDER ── */
+    .gradient-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--c-blue), var(--c-electric), transparent);
+      margin: 0;
+      opacity: 0.3;
+    }
+
+    /* ── PRODUCT IMAGE WRAPPER ── */
+    .product-img-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f0f0f8 0%, #e0e0f0 100%);
+    }
+
+    /* ── STORE SHOWCASE ── */
+    .store-showcase-bg {
+      background: var(--c-dark);
+      border: 1px solid var(--c-dark-border);
+      border-radius: var(--r-2xl);
+      overflow: hidden;
+      height: 100%;
+      min-height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .store-showcase-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .store-showcase-bg:hover img {
+      transform: scale(1.05);
+    }
+
+    /* No Image Placeholder */
+    .img-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      color: var(--c-gray-mid);
+      font-size: var(--text-sm);
+    }
+
+    /* ── HORIZONTAL RULE ── */
+    hr.section-rule {
+      border: none;
+      height: 1px;
+      background: var(--c-dark-border);
+      margin: 0;
+    }
+
+    /* ── RECENTLY VIEWED ── */
+    .recently-viewed {
+      position: fixed;
+      bottom: var(--space-20);
+      right: var(--space-8);
+      z-index: var(--z-overlay);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+  </style>
+</head>
+<body>
+  <!-- ═══════════════════════════════════════
+       LOADING SCREEN
+       ═══════════════════════════════════════ -->
+  <div id="loading-screen">
+    <div class="loader-logo">Sri Lakshmi Plaza</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-text">Crafting Premium Experience...</div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       SCROLL PROGRESS
+       ═══════════════════════════════════════ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ═══════════════════════════════════════
+       CUSTOM CURSOR
+       ═══════════════════════════════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" aria-label="Sri Lakshmi Plaza Home">
+          <img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza Logo" class="nav-logo-img" />
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu" role="list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="has-mega">
+            <a href="smartphones.html" class="nav-link">
+              Smartphones
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="mega-menu">
+              <div>
+                <div class="mega-col-title">By Brand</div>
+                <a href="smartphones.html?brand=apple" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+                  Apple iPhone
+                </a>
+                <a href="smartphones.html?brand=samsung" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                  Samsung Galaxy
+                </a>
+                <a href="smartphones.html?brand=oneplus" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  OnePlus
+                </a>
+                <a href="smartphones.html?brand=google" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/></svg>
+                  Google Pixel
+                </a>
+              </div>
+              <div>
+                <div class="mega-col-title">By Category</div>
+                <a href="smartphones.html?cat=flagship" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Flagship Phones
+                </a>
+                <a href="smartphones.html?cat=midrange" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  Mid-Range
+                </a>
+                <a href="smartphones.html?cat=budget" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Budget Phones
+                </a>
+              </div>
+              <div>
+                <div class="mega-col-title">Quick Links</div>
+                <a href="trade-in.html" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                  Trade-In
+                </a>
+                <a href="emi-finance.html" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                  EMI Options
+                </a>
+                <a href="offers.html" class="mega-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  Latest Offers
+                </a>
+              </div>
+            </div>
+          </li>
+          <li><a href="accessories.html" class="nav-link">Accessories</a></li>
+          <li><a href="offers.html" class="nav-link">Offers</a></li>
+          <li><a href="repair.html" class="nav-link">Repair</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <button class="nav-search-btn" aria-label="Search" id="search-open-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a href="smartphones.html?wishlist=true" class="nav-wishlist-btn" aria-label="Wishlist">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="wishlist-count" style="display:none;">0</span>
+          </a>
+          <a href="contact.html" class="nav-cta">Visit Store</a>
+          <button class="nav-hamburger" aria-label="Toggle Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-drawer-overlay"></div>
+
+  <!-- Mobile Nav Drawer -->
+  <nav class="nav-drawer" aria-label="Mobile Navigation">
+    <ul class="nav-drawer-links" role="list">
+      <li><a href="index.html" class="nav-drawer-link active">
+        <span>Home</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="smartphones.html" class="nav-drawer-link">
+        <span>Smartphones</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="accessories.html" class="nav-drawer-link">
+        <span>Accessories</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="offers.html" class="nav-drawer-link">
+        <span>Offers</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="trade-in.html" class="nav-drawer-link">
+        <span>Trade-In</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="emi-finance.html" class="nav-drawer-link">
+        <span>EMI & Finance</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="repair.html" class="nav-drawer-link">
+        <span>Repair Services</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="about.html" class="nav-drawer-link">
+        <span>About Us</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+      <li><a href="contact.html" class="nav-drawer-link">
+        <span>Contact</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a></li>
+    </ul>
+    <a href="tel:+919885125978" class="btn btn-primary" style="margin-top:auto;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.6 1.37h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9A16 16 0 0 0 15 16.09l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       SEARCH OVERLAY
+       ═══════════════════════════════════════ -->
+  <div class="search-overlay" role="dialog" aria-label="Search">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search phones, brands, accessories..." aria-label="Search products" />
+      <button class="search-close" aria-label="Close search">✕</button>
+    </div>
+    <div style="margin-top:2rem; color: var(--c-gray-mid); font-size:0.875rem; letter-spacing:0.1em; text-transform:uppercase;">
+      Popular: iPhone 16 · Galaxy S25 · OnePlus 13 · Pixel 9 Pro
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <!-- Background -->
+    <div class="hero-bg">
+      <!-- Replace with assets/images/hero-banner.jpg | Size: 1920×1080 | JPG ≤400KB -->
+      <!-- Premium wide-angle photograph of store with luxury lighting -->
+      <div data-img-id="hero-bg" data-img-variant="ph-hero" style="position:absolute;inset:0;">
+        <img src="assets/images/hero-banner.jpg"
+             data-img-id="hero-bg" data-img-variant="ph-hero"
+             alt="" class="hero-bg-image" aria-hidden="true"
+             onerror="this.style.display='none'" />
+      </div>
+      <div class="hero-gradient-overlay"></div>
+      <div class="hero-radial-glow"></div>
+      <div class="hero-radial-glow-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <!-- Glow Orbs -->
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+
+    <!-- Particles -->
+    <div class="hero-particles" aria-hidden="true">
+      <div class="hero-particle hero-particle-1"></div>
+      <div class="hero-particle hero-particle-2"></div>
+      <div class="hero-particle hero-particle-3"></div>
+      <div class="hero-particle hero-particle-4"></div>
+      <div class="hero-particle hero-particle-5"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="hero-inner">
+        <!-- Left: Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Vijayawada's #1 Premium Phone Store
+          </div>
+
+          <h1 class="hero-title">
+            <span class="line line-1">Experience</span>
+            <span class="line line-2">Premium <span class="highlight">Smartphones</span></span>
+            <span class="line" style="color: var(--c-gray-pale); font-weight: 300;">Like Never Before</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Explore the latest smartphones, accessories, and unbeatable offers — all in one destination. Genuine warranty, best prices, expert support.
+          </p>
+
+          <div class="hero-actions">
+            <a href="smartphones.html" class="hero-btn-primary magnetic" id="hero-shop-btn">
+              Shop Now
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="contact.html" class="hero-btn-secondary magnetic">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              Visit Store
+            </a>
+            <a href="tel:+919885125978" class="hero-btn-call">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.6 1.37h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9A16 16 0 0 0 15 16.09l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call Now
+            </a>
+          </div>
+
+          <div class="hero-tags">
+            <span class="hero-tag"><span class="hero-tag-dot"></span>100% Genuine</span>
+            <span class="hero-tag"><span class="hero-tag-dot"></span>Official Warranty</span>
+            <span class="hero-tag"><span class="hero-tag-dot"></span>No Cost EMI</span>
+            <span class="hero-tag"><span class="hero-tag-dot"></span>Expert Support</span>
+          </div>
+        </div>
+
+        <!-- Right: Visual / Phone Display -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-phones">
+            <!-- Phone 2 - Left -->
+            <!-- Replace with assets/images/samsung-s25-ultra.png | PNG transparent | 800×1400 -->
+            <div class="hero-phone hero-phone-2">
+              <img src="assets/images/samsung-s25-ultra.png"
+                   data-img-id="hero-samsung" data-img-variant="ph-product"
+                   alt="Samsung Galaxy S25 Ultra"
+                   onerror="this.style.display='none';this.parentElement.appendChild(window.parent_buildPh&&window.parent_buildPh('hero-samsung','ph-product'))" />
+            </div>
+
+            <!-- Phone 1 - Center Main -->
+            <!-- Replace with assets/images/iphone-16-pro.png | PNG transparent | 800×1400 -->
+            <div class="hero-phone hero-phone-1">
+              <img src="assets/images/iphone-16-pro.png"
+                   data-img-id="hero-iphone" data-img-variant="ph-product"
+                   alt="iPhone 16 Pro Max"
+                   onerror="this.style.display='none'" />
+            </div>
+
+            <!-- Phone 3 - Right -->
+            <!-- Replace with assets/images/oneplus-13.png | PNG transparent | 800×1400 -->
+            <div class="hero-phone hero-phone-3">
+              <img src="assets/images/oneplus-13.png"
+                   data-img-id="hero-oneplus" data-img-variant="ph-product"
+                   alt="OnePlus 13"
+                   onerror="this.style.display='none'" />
+            </div>
+
+            <!-- Floating Glass Cards -->
+            <div class="hero-float-card hero-float-card-1">
+              <div class="float-card-title">Today's Best Deal</div>
+              <div class="float-card-value">₹10,000 OFF</div>
+              <div class="float-card-sub">On iPhone 16 Series →</div>
+            </div>
+
+            <div class="hero-float-card hero-float-card-2">
+              <div class="float-card-title">Happy Customers</div>
+              <div class="float-card-value">5000+</div>
+              <div class="float-card-sub">⭐ 4.9 Rating</div>
+            </div>
+
+            <div class="hero-float-card hero-float-card-3">
+              <div class="float-card-title">EMI Starting</div>
+              <div class="float-card-value">₹999/mo</div>
+              <div class="float-card-sub">0% Interest</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       BRANDS CAROUSEL
+       ═══════════════════════════════════════ -->
+  <section class="brands-section" aria-label="Our Brands">
+    <div class="brands-label">Authorised Retailer for Leading Brands</div>
+    <div class="brand-carousel-section">
+      <div class="brand-carousel-track" role="list">
+        <!-- Apple -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(29,29,31,0.8), rgba(50,50,55,0.8));">
+            <span class="brand-initial">🍎</span>
+          </div>
+          <span class="brand-name">Apple</span>
+        </div>
+        <!-- Samsung -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(20,40,160,0.3), rgba(20,40,160,0.1));">
+            <span class="brand-initial" style="font-size:1rem;">SAM</span>
+          </div>
+          <span class="brand-name">Samsung</span>
+        </div>
+        <!-- OnePlus -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(245,1,12,0.2), rgba(245,1,12,0.05));">
+            <span class="brand-initial" style="color:#f5010c;">1+</span>
+          </div>
+          <span class="brand-name">OnePlus</span>
+        </div>
+        <!-- Vivo -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(81,89,184,0.3), rgba(81,89,184,0.1));">
+            <span class="brand-initial" style="color:#8b8de8; font-size:1rem;">vivo</span>
+          </div>
+          <span class="brand-name">Vivo</span>
+        </div>
+        <!-- OPPO -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(31,142,44,0.2), rgba(31,142,44,0.05));">
+            <span class="brand-initial" style="color:#4ade80; font-size:0.9rem;">OPPO</span>
+          </div>
+          <span class="brand-name">OPPO</span>
+        </div>
+        <!-- Realme -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(254,196,1,0.2), rgba(254,196,1,0.05));">
+            <span class="brand-initial" style="color:#fbbf24; font-size:0.8rem;">realme</span>
+          </div>
+          <span class="brand-name">Realme</span>
+        </div>
+        <!-- Xiaomi -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(255,105,0,0.2), rgba(255,105,0,0.05));">
+            <span class="brand-initial" style="color:#fb923c; font-size:1rem;">Mi</span>
+          </div>
+          <span class="brand-name">Xiaomi</span>
+        </div>
+        <!-- Google Pixel -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(66,133,244,0.2), rgba(66,133,244,0.05));">
+            <span class="brand-initial" style="color:#60a5fa;">G</span>
+          </div>
+          <span class="brand-name">Google</span>
+        </div>
+        <!-- Nothing -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: rgba(255,255,255,0.05);">
+            <span class="brand-initial" style="font-size:1rem;">∅</span>
+          </div>
+          <span class="brand-name">Nothing</span>
+        </div>
+        <!-- Motorola -->
+        <div class="brand-item" role="listitem">
+          <div class="brand-logo-wrap" style="background: linear-gradient(135deg, rgba(90,0,150,0.2), rgba(90,0,150,0.05));">
+            <span class="brand-initial" style="color:#a78bfa;">M</span>
+          </div>
+          <span class="brand-name">Motorola</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FEATURED PRODUCTS
+       ═══════════════════════════════════════ -->
+  <section class="featured-products" id="products" aria-label="Featured Products">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Featured Products
+        </div>
+        <h2 class="section-title reveal delay-100">
+          Latest <span class="gradient-text">Premium Phones</span>
+        </h2>
+        <p class="section-subtitle reveal delay-200">
+          Handpicked flagship smartphones at the best prices. All with genuine warranty.
+        </p>
+      </div>
+
+      <!-- Filter Chips -->
+      <div class="filter-chips reveal delay-300" data-target="#products-grid">
+        <span class="chip active" data-filter="all">All Brands</span>
+        <span class="chip" data-filter="Apple">Apple</span>
+        <span class="chip" data-filter="Samsung">Samsung</span>
+        <span class="chip" data-filter="OnePlus">OnePlus</span>
+        <span class="chip" data-filter="Google">Google</span>
+        <span class="chip" data-filter="Nothing">Nothing</span>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- iPhone 16 Pro Max -->
+        <article class="product-card tilt-card" data-brand="Apple" data-id="iphone-16-pro-max">
+          <div class="product-card-image">
+            <!-- Replace with assets/images/iphone-16-pro.png | PNG transparent | 800×800 -->
+            <div class="product-img-wrapper" data-img-id="iphone-16-pro" data-img-variant="ph-product">
+              <img src="assets/images/iphone-16-pro.png"
+                   data-img-id="iphone-16-pro" data-img-variant="ph-product"
+                   alt="iPhone 16 Pro Max" loading="lazy"
+                   style="height:200px;width:auto;object-fit:contain;" />
+            </div>
+            <div class="product-card-badges">
+              <span class="badge badge-gold">Best Seller</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn wishlist-btn" data-id="iphone-16-pro-max" aria-label="Add to Wishlist" data-tooltip="Wishlist">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="product-action-btn compare-btn" data-id="iphone-16-pro-max" data-name="iPhone 16 Pro Max" aria-label="Compare" data-tooltip="Compare">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-brand">Apple</div>
+            <h3 class="product-name">iPhone 16 Pro Max</h3>
+            <div class="product-specs">
+              <span class="product-spec-tag">A18 Pro</span>
+              <span class="product-spec-tag">256GB</span>
+              <span class="product-spec-tag">5G</span>
+              <span class="product-spec-tag">48MP</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span>4.9 (248 reviews)</span>
+            </div>
+            <div class="product-price-row">
+              <div class="product-price">
+                <span class="price-current">₹1,34,900</span>
+                <span class="price-original">₹1,49,900</span>
+                <span class="price-discount">10% OFF</span>
+              </div>
+            </div>
+            <div class="product-emi">No Cost EMI from ₹11,242/mo</div>
+            <div class="product-card-footer">
+              <button class="btn-buy" onclick="showToast('📱 Call us to buy! +91 98851 25978', 'success')">Buy Now</button>
+              <button class="btn-compare compare-btn" data-id="iphone-16-pro-max" data-name="iPhone 16 Pro Max">Compare</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Samsung Galaxy S25 Ultra -->
+        <article class="product-card tilt-card" data-brand="Samsung" data-id="samsung-s25-ultra">
+          <div class="product-card-image">
+            <!-- Replace with assets/images/samsung-s25-ultra.png | PNG transparent | 800×800 -->
+            <div class="product-img-wrapper" data-img-id="samsung-s25" data-img-variant="ph-product">
+              <img src="assets/images/samsung-s25-ultra.png"
+                   data-img-id="samsung-s25" data-img-variant="ph-product"
+                   alt="Samsung Galaxy S25 Ultra" loading="lazy"
+                   style="height:200px;width:auto;object-fit:contain;" />
+            </div>
+            <div class="product-card-badges">
+              <span class="badge badge-primary">New Launch</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn wishlist-btn" data-id="samsung-s25-ultra" aria-label="Add to Wishlist">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="product-action-btn compare-btn" data-id="samsung-s25-ultra" data-name="Galaxy S25 Ultra" aria-label="Compare">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-brand">Samsung</div>
+            <h3 class="product-name">Galaxy S25 Ultra</h3>
+            <div class="product-specs">
+              <span class="product-spec-tag">SD 8 Elite</span>
+              <span class="product-spec-tag">256GB</span>
+              <span class="product-spec-tag">S-Pen</span>
+              <span class="product-spec-tag">200MP</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span>4.8 (195 reviews)</span>
+            </div>
+            <div class="product-price-row">
+              <div class="product-price">
+                <span class="price-current">₹1,29,999</span>
+                <span class="price-original">₹1,49,999</span>
+                <span class="price-discount">13% OFF</span>
+              </div>
+            </div>
+            <div class="product-emi">No Cost EMI from ₹10,834/mo</div>
+            <div class="product-card-footer">
+              <button class="btn-buy" onclick="showToast('📱 Call us to buy! +91 98851 25978', 'success')">Buy Now</button>
+              <button class="btn-compare compare-btn" data-id="samsung-s25-ultra" data-name="Galaxy S25 Ultra">Compare</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- OnePlus 13 -->
+        <article class="product-card tilt-card" data-brand="OnePlus" data-id="oneplus-13">
+          <div class="product-card-image">
+            <!-- Replace with assets/images/oneplus-13.png | PNG transparent | 800×800 -->
+            <div class="product-img-wrapper" data-img-id="oneplus-13" data-img-variant="ph-product">
+              <img src="assets/images/oneplus-13.png"
+                   data-img-id="oneplus-13" data-img-variant="ph-product"
+                   alt="OnePlus 13" loading="lazy"
+                   style="height:200px;width:auto;object-fit:contain;" />
+            </div>
+            <div class="product-card-badges">
+              <span class="badge badge-green">Fast Charging</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn wishlist-btn" data-id="oneplus-13" aria-label="Add to Wishlist">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="product-action-btn compare-btn" data-id="oneplus-13" data-name="OnePlus 13" aria-label="Compare">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-brand">OnePlus</div>
+            <h3 class="product-name">OnePlus 13</h3>
+            <div class="product-specs">
+              <span class="product-spec-tag">SD 8 Gen 3</span>
+              <span class="product-spec-tag">256GB</span>
+              <span class="product-spec-tag">100W</span>
+              <span class="product-spec-tag">6000mAh</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span>4.7 (156 reviews)</span>
+            </div>
+            <div class="product-price-row">
+              <div class="product-price">
+                <span class="price-current">₹69,999</span>
+                <span class="price-original">₹79,999</span>
+                <span class="price-discount">12% OFF</span>
+              </div>
+            </div>
+            <div class="product-emi">No Cost EMI from ₹5,834/mo</div>
+            <div class="product-card-footer">
+              <button class="btn-buy" onclick="showToast('📱 Call us to buy! +91 98851 25978', 'success')">Buy Now</button>
+              <button class="btn-compare compare-btn" data-id="oneplus-13" data-name="OnePlus 13">Compare</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Nothing Phone 3 -->
+        <article class="product-card tilt-card" data-brand="Nothing" data-id="nothing-phone-3">
+          <div class="product-card-image">
+            <!-- Replace with assets/images/nothing-phone-3.png | PNG transparent | 800×800 -->
+            <div class="product-img-wrapper" data-img-id="nothing-phone-3" data-img-variant="ph-product">
+              <img src="assets/images/nothing-phone-3.png"
+                   data-img-id="nothing-phone-3" data-img-variant="ph-product"
+                   alt="Nothing Phone 3" loading="lazy"
+                   style="height:200px;width:auto;object-fit:contain;" />
+            </div>
+            <div class="product-card-badges">
+              <span class="badge badge-primary">Unique Design</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn wishlist-btn" data-id="nothing-phone-3" aria-label="Add to Wishlist">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="product-action-btn compare-btn" data-id="nothing-phone-3" data-name="Nothing Phone 3" aria-label="Compare">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-brand">Nothing</div>
+            <h3 class="product-name">Nothing Phone (3)</h3>
+            <div class="product-specs">
+              <span class="product-spec-tag">SD 8s Gen 3</span>
+              <span class="product-spec-tag">256GB</span>
+              <span class="product-spec-tag">Glyph</span>
+              <span class="product-spec-tag">5000mAh</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span>4.6 (87 reviews)</span>
+            </div>
+            <div class="product-price-row">
+              <div class="product-price">
+                <span class="price-current">₹59,999</span>
+                <span class="price-original">₹64,999</span>
+                <span class="price-discount">8% OFF</span>
+              </div>
+            </div>
+            <div class="product-emi">No Cost EMI from ₹4,999/mo</div>
+            <div class="product-card-footer">
+              <button class="btn-buy" onclick="showToast('📱 Call us to buy! +91 98851 25978', 'success')">Buy Now</button>
+              <button class="btn-compare compare-btn" data-id="nothing-phone-3" data-name="Nothing Phone 3">Compare</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Google Pixel 9 Pro -->
+        <article class="product-card tilt-card" data-brand="Google" data-id="pixel-9-pro">
+          <div class="product-card-image">
+            <!-- Replace with assets/images/pixel-9-pro.png | PNG transparent | 800×800 -->
+            <div class="product-img-wrapper" data-img-id="pixel-9-pro" data-img-variant="ph-product">
+              <img src="assets/images/pixel-9-pro.png"
+                   data-img-id="pixel-9-pro" data-img-variant="ph-product"
+                   alt="Google Pixel 9 Pro" loading="lazy"
+                   style="height:200px;width:auto;object-fit:contain;" />
+            </div>
+            <div class="product-card-badges">
+              <span class="badge badge-gold">AI Powered</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-action-btn wishlist-btn" data-id="pixel-9-pro" aria-label="Add to Wishlist">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+              <button class="product-action-btn compare-btn" data-id="pixel-9-pro" data-name="Google Pixel 9 Pro" aria-label="Compare">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <div class="product-brand">Google</div>
+            <h3 class="product-name">Pixel 9 Pro</h3>
+            <div class="product-specs">
+              <span class="product-spec-tag">Tensor G4</span>
+              <span class="product-spec-tag">256GB</span>
+              <span class="product-spec-tag">Gemini AI</span>
+              <span class="product-spec-tag">50MP</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <span>4.8 (112 reviews)</span>
+            </div>
+            <div class="product-price-row">
+              <div class="product-price">
+                <span class="price-current">₹1,09,999</span>
+                <span class="price-original">₹1,24,999</span>
+                <span class="price-discount">12% OFF</span>
+              </div>
+            </div>
+            <div class="product-emi">No Cost EMI from ₹9,167/mo</div>
+            <div class="product-card-footer">
+              <button class="btn-buy" onclick="showToast('📱 Call us to buy! +91 98851 25978', 'success')">Buy Now</button>
+              <button class="btn-compare compare-btn" data-id="pixel-9-pro" data-name="Pixel 9 Pro">Compare</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- View All Button -->
+      <div class="text-center mt-12 reveal">
+        <a href="smartphones.html" class="btn btn-secondary magnetic">
+          View All Smartphones
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ═══════════════════════════════════════
+       WHY CHOOSE US
+       ═══════════════════════════════════════ -->
+  <section class="why-section" id="why-us" aria-label="Why Choose Us">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Why Choose Us
+        </div>
+        <h2 class="section-title reveal delay-100">
+          The <span class="gradient-text">Sri Lakshmi</span> Difference
+        </h2>
+        <p class="section-subtitle reveal delay-200">
+          Over 10 years of trust, 5000+ happy customers, and an unmatched shopping experience.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal delay-100">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <h3 class="why-title">100% Genuine Products</h3>
+          <p class="why-desc">Every product is sourced directly from authorized distributors. No refurbished or counterfeit items.</p>
+        </div>
+
+        <div class="why-card reveal delay-200">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="22" height="18" rx="2" ry="2"/><path d="M16 3v4M8 3v4M1 9h22"/></svg>
+          </div>
+          <h3 class="why-title">Official Warranty</h3>
+          <p class="why-desc">All phones come with full manufacturer warranty. We handle all warranty claims on your behalf.</p>
+        </div>
+
+        <div class="why-card reveal delay-300">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="why-title">Best Prices</h3>
+          <p class="why-desc">Price match guarantee on all products. We beat any legitimate competitor price in Vijayawada.</p>
+        </div>
+
+        <div class="why-card reveal delay-400">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          </div>
+          <h3 class="why-title">Exchange Offers</h3>
+          <p class="why-desc">Get the best value for your old phone. Transparent evaluation and instant exchange discounts.</p>
+        </div>
+
+        <div class="why-card reveal delay-100">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h3 class="why-title">Easy EMI</h3>
+          <p class="why-desc">0% interest EMI on all major bank credit cards. Flexible tenures from 3 to 24 months.</p>
+        </div>
+
+        <div class="why-card reveal delay-200">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </div>
+          <h3 class="why-title">Fast Delivery</h3>
+          <p class="why-desc">Same-day delivery within Vijayawada city. Next-day delivery across the Krishna district.</p>
+        </div>
+
+        <div class="why-card reveal delay-300">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="why-title">Customer First</h3>
+          <p class="why-desc">Post-purchase support, setup assistance, and after-sales service. We don't just sell, we care.</p>
+        </div>
+
+        <div class="why-card reveal delay-400">
+          <div class="why-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M5 5a10 10 0 0 0 0 14"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="why-title">Expert Support</h3>
+          <p class="why-desc">Certified technicians and product specialists on-site 7 days a week to assist you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STORE EXPERIENCE
+       ═══════════════════════════════════════ -->
+  <section class="store-experience" id="store" aria-label="Store Experience">
+    <div class="container">
+      <div class="store-inner">
+        <!-- Images -->
+        <div class="store-images reveal-left">
+          <div class="store-img-main store-showcase-bg">
+            <img src="C:/Users/Bhuvanesh/.gemini/antigravity-ide/brain/9be79814-5b27-4370-a6a4-33def306c2bb/store_interior_1783246566542.png"
+                 alt="Sri Lakshmi Plaza Premium Showroom Interior" loading="lazy" />
+          </div>
+          <div class="store-img-1 store-showcase-bg">
+            <img src="C:/Users/Bhuvanesh/.gemini/antigravity-ide/brain/9be79814-5b27-4370-a6a4-33def306c2bb/accessories_hero_1783246643161.png"
+                 alt="Premium Accessories Display" loading="lazy" />
+          </div>
+          <div class="store-img-2 store-showcase-bg">
+            <img src="C:/Users/Bhuvanesh/.gemini/antigravity-ide/brain/9be79814-5b27-4370-a6a4-33def306c2bb/product_iphone_1783246583296.png"
+                 alt="iPhone Display" loading="lazy" style="object-fit: contain; padding: 20px; background: #f0f0f8;" />
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="store-content reveal-right">
+          <div>
+            <div class="section-label" style="margin-bottom: var(--space-6);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              Premium Store Experience
+            </div>
+            <h2 class="section-title">
+              Visit Our <span class="gradient-text">Luxury Showroom</span>
+            </h2>
+            <p class="section-subtitle" style="margin-bottom: var(--space-8);">
+              Step into Vijayawada's most premium mobile phone showroom. Experience every phone hands-on with our expert team guiding you.
+            </p>
+          </div>
+
+          <div class="store-feature">
+            <div class="store-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <div class="store-feature-text">
+              <h4>Hands-On Demo Experience</h4>
+              <p>Try before you buy. All our display phones are fully functional. Explore camera, performance, and UI yourself.</p>
+            </div>
+          </div>
+
+          <div class="store-feature">
+            <div class="store-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div class="store-feature-text">
+              <h4>Expert Consultation</h4>
+              <p>Our product specialists compare phones, explain features, and recommend the perfect device for your needs and budget.</p>
+            </div>
+          </div>
+
+          <div class="store-feature">
+            <div class="store-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <div class="store-feature-text">
+              <h4>Instant Purchase & Setup</h4>
+              <p>Buy your phone and we'll set it up completely — data transfer, apps, accounts — before you leave the store.</p>
+            </div>
+          </div>
+
+          <div class="location-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            40, Murali Fortune Rd, Labbipet, Vijayawada – 520010
+          </div>
+
+          <div class="flex gap-4 mt-6">
+            <a href="contact.html" class="btn btn-primary magnetic">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/></svg>
+              Get Directions
+            </a>
+            <a href="tel:+919885125978" class="btn btn-secondary magnetic">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.6 1.37h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9A16 16 0 0 0 15 16.09l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES
+       ═══════════════════════════════════════ -->
+  <section class="services-section" id="services" aria-label="Repair Services">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          Repair & Service
+        </div>
+        <h2 class="section-title reveal delay-100">
+          Expert <span class="gradient-text">Repair Services</span>
+        </h2>
+        <p class="section-subtitle reveal delay-200">
+          Certified technicians, original parts, quick turnaround. Your phone is in safe hands.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <div class="service-content">
+            <h3>Screen Replacement</h3>
+            <p>Cracked or broken screen? Get a pristine replacement with original parts. 30-day replacement warranty.</p>
+            <a href="repair.html" class="btn-ghost">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-100">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"/><line x1="23" y1="13" x2="23" y2="11"/><polyline points="11 6 7 12 13 12 9 18"/></svg>
+          </div>
+          <div class="service-content">
+            <h3>Battery Replacement</h3>
+            <p>Phone draining fast? We replace batteries with original capacity cells. Restore your phone to like-new condition.</p>
+            <a href="repair.html" class="btn-ghost">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-200">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="service-content">
+            <h3>Software Issues</h3>
+            <p>Stuck on update, app crashes, virus removal, or factory reset? Our software experts fix all OS-level issues.</p>
+            <a href="repair.html" class="btn-ghost">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-300">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          </div>
+          <div class="service-content">
+            <h3>Data Transfer</h3>
+            <p>Switching phones? We transfer all your contacts, photos, apps, and data securely. Zero data loss guaranteed.</p>
+            <a href="repair.html" class="btn-ghost">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-100">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="service-content">
+            <h3>Phone Setup</h3>
+            <p>New phone setup, account configuration, email setup, app installation, and personalization — all done for you.</p>
+            <a href="repair.html" class="btn-ghost">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-200">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="service-content">
+            <h3>Accessories Installation</h3>
+            <p>Professional tempered glass fitting, case installation, and screen protector application without bubbles.</p>
+            <a href="repair.html" class="btn-ghost">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SPECIAL OFFERS
+       ═══════════════════════════════════════ -->
+  <section class="offers-section" id="offers" aria-label="Special Offers">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          Special Offers
+        </div>
+        <h2 class="section-title reveal delay-100">
+          Unbeatable <span class="gradient-text">Deals & Offers</span>
+        </h2>
+        <p class="section-subtitle reveal delay-200">
+          Save more on every purchase with our exclusive offers and discounts.
+        </p>
+      </div>
+
+      <div class="offers-grid">
+        <div class="offer-card offer-1 reveal">
+          <div class="offer-badge">🎉</div>
+          <div class="offer-card-content">
+            <span class="offer-tag">Limited Time</span>
+            <h3>Festival Mega Sale</h3>
+            <p>Celebrate the season with special discounts up to ₹15,000 on flagship smartphones.</p>
+            <a href="offers.html" class="btn btn-secondary" style="background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.3);">Explore Offers →</a>
+          </div>
+        </div>
+
+        <div class="offer-card offer-2 reveal delay-100">
+          <div class="offer-badge">🎓</div>
+          <div class="offer-card-content">
+            <span class="offer-tag">Students</span>
+            <h3>Student Special Discount</h3>
+            <p>Exclusive 5% extra discount for students on all brands. Valid with student ID card.</p>
+            <a href="offers.html" class="btn btn-secondary" style="background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.3);">Claim Discount →</a>
+          </div>
+        </div>
+
+        <div class="offer-card offer-3 reveal delay-200">
+          <div class="offer-badge">🔄</div>
+          <div class="offer-card-content">
+            <span class="offer-tag">Exchange Bonus</span>
+            <h3>Exchange & Save Big</h3>
+            <p>Get ₹5,000 extra on exchange for any smartphone purchase above ₹50,000.</p>
+            <a href="trade-in.html" class="btn btn-secondary" style="background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.3);">Trade-In Now →</a>
+          </div>
+        </div>
+
+        <div class="offer-card offer-4 reveal delay-100">
+          <div class="offer-badge">💳</div>
+          <div class="offer-card-content">
+            <span class="offer-tag">Bank Offer</span>
+            <h3>Bank Cashback Offers</h3>
+            <p>Get 10% instant cashback with HDFC, SBI, and ICICI bank credit and debit cards.</p>
+            <a href="offers.html" class="btn btn-secondary" style="background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.3);">Check Offers →</a>
+          </div>
+        </div>
+
+        <div class="offer-card offer-5 reveal delay-200" style="grid-column: span 2;">
+          <div class="offer-badge" style="font-size:5rem;">0%</div>
+          <div class="offer-card-content">
+            <span class="offer-tag">No Cost EMI</span>
+            <h3>Zero Interest on All Products</h3>
+            <p>Buy any smartphone on No Cost EMI with 0% interest. Available on all major bank cards — HDFC, SBI, ICICI, Axis, Kotak and more. Tenures from 3 to 24 months.</p>
+            <a href="emi-finance.html" class="btn btn-secondary" style="background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.3);">Calculate EMI →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ACCESSORIES
+       ═══════════════════════════════════════ -->
+  <section class="accessories-section" id="accessories" aria-label="Accessories">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          Accessories
+        </div>
+        <h2 class="section-title reveal delay-100">
+          Premium <span class="gradient-text">Accessories</span>
+        </h2>
+        <p class="section-subtitle reveal delay-200">
+          Everything your phone needs. Genuine accessories from top brands.
+        </p>
+      </div>
+
+      <div class="accessories-grid">
+        <div class="accessory-card reveal delay-100">
+          <span class="accessory-emoji">🎧</span>
+          <h3 class="accessory-title">Earbuds & TWS</h3>
+          <p class="accessory-count">50+ Products</p>
+        </div>
+        <div class="accessory-card reveal delay-200">
+          <span class="accessory-emoji">⌚</span>
+          <h3 class="accessory-title">Smart Watches</h3>
+          <p class="accessory-count">30+ Products</p>
+        </div>
+        <div class="accessory-card reveal delay-300">
+          <span class="accessory-emoji">⚡</span>
+          <h3 class="accessory-title">Chargers & Cables</h3>
+          <p class="accessory-count">80+ Products</p>
+        </div>
+        <div class="accessory-card reveal delay-400">
+          <span class="accessory-emoji">🔋</span>
+          <h3 class="accessory-title">Power Banks</h3>
+          <p class="accessory-count">25+ Products</p>
+        </div>
+        <div class="accessory-card reveal delay-100">
+          <span class="accessory-emoji">📱</span>
+          <h3 class="accessory-title">Phone Cases</h3>
+          <p class="accessory-count">200+ Products</p>
+        </div>
+        <div class="accessory-card reveal delay-200">
+          <span class="accessory-emoji">🛡️</span>
+          <h3 class="accessory-title">Screen Guards</h3>
+          <p class="accessory-count">150+ Products</p>
+        </div>
+        <div class="accessory-card reveal delay-300">
+          <span class="accessory-emoji">🔊</span>
+          <h3 class="accessory-title">BT Speakers</h3>
+          <p class="accessory-count">40+ Products</p>
+        </div>
+        <div class="accessory-card reveal delay-400">
+          <span class="accessory-emoji">🎮</span>
+          <h3 class="accessory-title">Gaming Gear</h3>
+          <p class="accessory-count">20+ Products</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 reveal">
+        <a href="accessories.html" class="btn btn-secondary magnetic">
+          Browse All Accessories
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STATISTICS
+       ═══════════════════════════════════════ -->
+  <section class="stats-section" aria-label="Our Statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="5000">0</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="10" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="+">0</div>
+          <div class="stat-label">Brands Available</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="500" data-suffix="+">0</div>
+          <div class="stat-label">Products in Stock</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+       ═══════════════════════════════════════ -->
+  <section class="testimonials-section" id="reviews" aria-label="Customer Reviews">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Customer Reviews
+        </div>
+        <h2 class="section-title reveal delay-100">
+          What Our <span class="gradient-text">Customers Say</span>
+        </h2>
+      </div>
+
+      <!-- Overall Rating -->
+      <div class="overall-rating reveal">
+        <div class="rating-big">4.9</div>
+        <div class="rating-details">
+          <div class="stars" style="font-size: 1.5rem;">★★★★★</div>
+          <p>Based on 5000+ reviews</p>
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-top:0.5rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#4285F4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            <span style="font-size:0.875rem; color: var(--c-gray-light);">Google Verified Reviews</span>
+          </div>
+        </div>
+        <div class="rating-bars">
+          <div class="rating-bar-row">
+            <span class="rating-bar-label">5★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:88%"></div></div>
+            <span class="rating-bar-count">88%</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="rating-bar-label">4★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:8%"></div></div>
+            <span class="rating-bar-count">8%</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="rating-bar-label">3★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:3%"></div></div>
+            <span class="rating-bar-count">3%</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="rating-bar-label">2★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:1%"></div></div>
+            <span class="rating-bar-count">1%</span>
+          </div>
+          <div class="rating-bar-row">
+            <span class="rating-bar-label">1★</span>
+            <div class="rating-bar-track"><div class="rating-bar-fill" style="width:0%"></div></div>
+            <span class="rating-bar-count">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars stars">★★★★★</div>
+          <p class="testimonial-text">"Sri Lakshmi Plaza is simply the best phone store in Vijayawada. Got my iPhone 16 Pro Max at a great price with genuine warranty. The staff was incredibly knowledgeable. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder">RK</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Ravi Kumar</div>
+              <div class="testimonial-role">Software Engineer, Vijayawada</div>
+              <div class="testimonial-google">
+                <span class="google-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                  Verified Google Review
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-100">
+          <div class="testimonial-stars stars">★★★★★</div>
+          <p class="testimonial-text">"Amazing experience! I was confused between Samsung and OnePlus, but the expert team here helped me compare both phones. The store is beautifully organized and the prices are unbeatable in Vijayawada!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">PL</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Priya Lakshmi</div>
+              <div class="testimonial-role">Teacher, Labbipet</div>
+              <div class="testimonial-google">
+                <span class="google-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                  Verified Google Review
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-200">
+          <div class="testimonial-stars stars">★★★★★</div>
+          <p class="testimonial-text">"Had a broken screen replaced here — incredibly fast service, just 2 hours! The technicians used original parts. Price was fair and work quality is exceptional. Definitely my go-to repair center in AP."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder" style="background: linear-gradient(135deg, #10b981, #3b82f6);">SR</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Suresh Reddy</div>
+              <div class="testimonial-role">Business Owner, Vijayawada</div>
+              <div class="testimonial-google">
+                <span class="google-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                  Verified Google Review
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-300">
+          <div class="testimonial-stars stars">★★★★★</div>
+          <p class="testimonial-text">"Got student discount on my Nothing Phone 3! The glyph interface is so cool. The staff even helped me set it up perfectly. Best shopping experience at any electronics store in Vijayawada!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">MD</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Meena Devi</div>
+              <div class="testimonial-role">College Student, Krishna District</div>
+              <div class="testimonial-google">
+                <span class="google-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                  Verified Google Review
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-100">
+          <div class="testimonial-stars stars">★★★★★</div>
+          <p class="testimonial-text">"Excellent service and genuine products. The Pixel 9 Pro I purchased has been fantastic. Great camera quality. Store ambiance is premium — feels like an Apple Store. Would absolutely recommend to everyone!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder" style="background: linear-gradient(135deg, #6366f1, #2563eb);">AB</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Anil Babu</div>
+              <div class="testimonial-role">Doctor, Vijayawada</div>
+              <div class="testimonial-google">
+                <span class="google-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                  Verified Google Review
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-200">
+          <div class="testimonial-stars stars">★★★★★</div>
+          <p class="testimonial-text">"Bought 5 phones for my team from Sri Lakshmi Plaza. Got excellent bulk pricing and every phone with official warranty. EMI options are very convenient. My permanent go-to store for all electronics!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-placeholder" style="background: linear-gradient(135deg, #059669, #0891b2);">LP</div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Lakshmi Prasad</div>
+              <div class="testimonial-role">IT Professional, Andhra Pradesh</div>
+              <div class="testimonial-google">
+                <span class="google-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                  Verified Google Review
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FAQ
+       ═══════════════════════════════════════ -->
+  <section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          FAQs
+        </div>
+        <h2 class="section-title reveal delay-100">
+          Frequently Asked <span class="gradient-text">Questions</span>
+        </h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h4>Are all products at Sri Lakshmi Plaza genuine and original?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, absolutely! We are an authorized retailer for all major brands including Apple, Samsung, OnePlus, Google, and more. Every product comes with the manufacturer's official warranty and all required documentation.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-100">
+          <div class="faq-question">
+            <h4>Do you offer EMI options for phone purchases?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! We offer No Cost EMI options on all major credit cards from HDFC, SBI, ICICI, Axis, and more. We also have partnerships with Bajaj Finance and other NBFCs for flexible financing options starting from 3 to 24 months.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-200">
+          <div class="faq-question">
+            <h4>What is your exchange/trade-in policy?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We offer a transparent trade-in program for your old phone. Bring your old device to our store and our experts will evaluate it and give you the best market value. The trade-in amount is deducted directly from your new phone purchase.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-300">
+          <div class="faq-question">
+            <h4>Do you offer phone repair services?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! We have a dedicated repair center with certified technicians. We handle screen replacements, battery replacements, water damage repair, software issues, and more. Most repairs are completed within 2-4 hours.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-400">
+          <div class="faq-question">
+            <h4>What are your store hours?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We are open Monday to Saturday from 10:00 AM to 8:00 PM, and Sunday from 11:00 AM to 7:00 PM. We are closed on major public holidays. You can also reach us on WhatsApp for quick inquiries.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-100">
+          <div class="faq-question">
+            <h4>Do you provide home delivery?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, we offer same-day delivery within Vijayawada city limits and next-day delivery across Krishna and Guntur districts. Free delivery is available on orders above ₹15,000. Please WhatsApp us or call to arrange delivery.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-200">
+          <div class="faq-question">
+            <h4>Can I test phones before buying?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutely! Our showroom has fully operational demo units of all featured phones. Our knowledgeable staff will help you experience the phones hands-on and answer all your questions before you make a purchase decision.</div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-300">
+          <div class="faq-question">
+            <h4>Do you have festival offers and special discounts?</h4>
+            <div class="faq-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! We regularly run festival offers during Dussehra, Diwali, Christmas, and New Year. We also offer special student discounts, cashback offers on select bank cards, and exclusive exchange bonus deals throughout the year.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       NEWSLETTER
+       ═══════════════════════════════════════ -->
+  <section class="newsletter-wrap" aria-label="Newsletter">
+    <div class="container">
+      <div class="newsletter-section reveal-scale">
+        <div class="section-label center" style="margin: 0 auto var(--space-6);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Newsletter
+        </div>
+        <h2 class="section-title text-center">
+          Stay <span class="gradient-text">Updated</span>
+        </h2>
+        <p class="section-subtitle text-center" style="margin: 0 auto;">
+          Get exclusive offers, new launches, and smartphone news delivered to your inbox first.
+        </p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="text-center text-sm text-muted" style="margin-top: var(--space-4);">
+          No spam, unsubscribe anytime. 🔒 Your data is safe with us.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo" aria-label="Site Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza" style="height:52px;width:auto;object-fit:contain;background:rgba(255,255,255,0.95);border-radius:8px;padding:4px 12px;" />
+          </div>
+          <p class="footer-tagline">
+            Vijayawada's most trusted premium mobile phone store. 10+ years of excellence, 5000+ happy customers, and an unmatched shopping experience.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.38z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="https://wa.me/919885125978" class="social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="smartphones.html" class="footer-link">Smartphones</a></li>
+            <li><a href="accessories.html" class="footer-link">Accessories</a></li>
+            <li><a href="offers.html" class="footer-link">Special Offers</a></li>
+            <li><a href="trade-in.html" class="footer-link">Trade-In</a></li>
+            <li><a href="emi-finance.html" class="footer-link">EMI & Finance</a></li>
+            <li><a href="repair.html" class="footer-link">Repair Services</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Brands -->
+        <div>
+          <h3 class="footer-col-title">Top Brands</h3>
+          <ul class="footer-links">
+            <li><a href="smartphones.html?brand=apple" class="footer-link">Apple iPhone</a></li>
+            <li><a href="smartphones.html?brand=samsung" class="footer-link">Samsung Galaxy</a></li>
+            <li><a href="smartphones.html?brand=oneplus" class="footer-link">OnePlus</a></li>
+            <li><a href="smartphones.html?brand=google" class="footer-link">Google Pixel</a></li>
+            <li><a href="smartphones.html?brand=nothing" class="footer-link">Nothing Phone</a></li>
+            <li><a href="smartphones.html?brand=vivo" class="footer-link">Vivo</a></li>
+            <li><a href="smartphones.html?brand=oppo" class="footer-link">OPPO</a></li>
+            <li><a href="smartphones.html?brand=realme" class="footer-link">Realme</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-col-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="footer-contact-text">
+              <span>Address</span>
+              <p>Door No. 40, 3/1-46, Murali Fortune Rd, Behind RS Brothers, Labbipet, Vijayawada – 520010</p>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.6 1.37h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9A16 16 0 0 0 15 16.09l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="footer-contact-text">
+              <span>Phone</span>
+              <a href="tel:+919885125978">+91 98851 25978</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="footer-contact-text">
+              <span>Store Hours</span>
+              <p>Mon–Sat: 10AM–8PM<br>Sunday: 11AM–7PM</p>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="footer-contact-text">
+              <span>Email</span>
+              <a href="mailto:info@srilakshmiplaza.com">info@srilakshmiplaza.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2024 Sri Lakshmi Plaza. All rights reserved. Made with ❤️ in Vijayawada.
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       FLOATING ELEMENTS
+       ═══════════════════════════════════════ -->
+
+  <!-- WhatsApp Float -->
+  <div id="whatsapp-float">
+    <a href="https://wa.me/919885125978?text=Hello%20Sri%20Lakshmi%20Plaza!%20I%20would%20like%20to%20enquire%20about..." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      <span>Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- Compare Bar -->
+  <div class="compare-bar" role="complementary" aria-label="Compare Products">
+    <div class="container">
+      <div class="compare-bar-inner">
+        <div class="compare-items">
+          <div class="compare-slot">Add Phone</div>
+          <div class="compare-slot">Add Phone</div>
+          <div class="compare-slot">Add Phone</div>
+        </div>
+        <button class="btn btn-primary compare-now-btn" style="flex-shrink:0;">Compare Now</button>
+        <button class="btn btn-secondary compare-clear-btn" style="flex-shrink:0;">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" role="dialog" aria-label="Cookie Consent">
+    <p>🍪 We use cookies to enhance your experience on our website. By continuing, you agree to our <a href="#" style="color:var(--c-blue-light);">Cookie Policy</a>.</p>
+    <div class="cookie-actions">
+      <button id="accept-cookies" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Accept</button>
+      <button id="decline-cookies" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Decline</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

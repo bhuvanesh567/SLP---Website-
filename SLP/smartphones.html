@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smartphones — Sri Lakshmi Plaza | Buy iPhones, Samsung, OnePlus in Vijayawada</title>
+  <meta name="description" content="Buy the latest iPhones, Samsung Galaxy, OnePlus, Google Pixel, Vivo, OPPO and more at Sri Lakshmi Plaza, Vijayawada. Genuine warranty, best prices, easy EMI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <style>
+    .phones-hero { min-height: 40vh; display: flex; align-items: center; padding: calc(var(--space-24)+80px) 0 var(--space-16); background: var(--grad-hero); position: relative; overflow: hidden; }
+    .phones-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(37,99,235,0.15) 0%, transparent 70%); }
+    .phones-section { padding: var(--section-pad); }
+    .phones-layout { display: grid; grid-template-columns: 260px 1fr; gap: var(--space-8); }
+    .filter-sidebar { background: var(--c-dark-card); border: 1px solid var(--c-dark-border); border-radius: var(--r-2xl); padding: var(--space-8); position: sticky; top: 100px; height: fit-content; }
+    .filter-sidebar-title { font-size: var(--text-sm); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-blue-light); margin-bottom: var(--space-5); }
+    .filter-group { margin-bottom: var(--space-8); }
+    .filter-group-title { font-size: var(--text-sm); font-weight: 600; color: var(--c-white); margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 1px solid var(--c-dark-border); }
+    .filter-option { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) 0; cursor: pointer; }
+    .filter-checkbox { width: 16px; height: 16px; border: 1.5px solid var(--c-gray); border-radius: 4px; cursor: pointer; }
+    .filter-option-label { font-size: var(--text-sm); color: var(--c-gray-light); cursor: pointer; transition: color var(--t-base); }
+    .filter-option:hover .filter-option-label { color: var(--c-white); }
+    .filter-price-range { display: flex; gap: var(--space-3); margin-top: var(--space-4); }
+    .price-input { flex: 1; padding: var(--space-3); background: var(--c-dark-3); border: 1px solid var(--c-dark-border); border-radius: var(--r-md); color: var(--c-white); font-size: var(--text-sm); outline: none; }
+    .phones-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-8); flex-wrap: wrap; gap: var(--space-4); }
+    .phones-count { font-size: var(--text-sm); color: var(--c-gray-light); }
+    .sort-select { padding: var(--space-2) var(--space-4); background: var(--c-dark-card); border: 1px solid var(--c-dark-border); border-radius: var(--r-lg); color: var(--c-white); font-size: var(--text-sm); outline: none; cursor: pointer; }
+    .phones-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-6); }
+    @media (max-width: 900px) { .phones-layout { grid-template-columns: 1fr; } .filter-sidebar { position: static; } }
+  </style>
+</head>
+<body>
+  <div id="loading-screen"><div class="loader-logo">Sri Lakshmi Plaza</div><div class="loader-bar"><div class="loader-bar-fill"></div></div><div class="loader-text">Loading...</div></div>
+  <div id="scroll-progress"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-outline"></div>
+
+  <nav class="navbar">
+    <div class="container"><div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza Logo" class="nav-logo-img" /></a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="smartphones.html" class="nav-link active">Smartphones</a></li>
+        <li><a href="accessories.html" class="nav-link">Accessories</a></li>
+        <li><a href="offers.html" class="nav-link">Offers</a></li>
+        <li><a href="repair.html" class="nav-link">Repair</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-search-btn" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        <a href="contact.html" class="nav-cta">Visit Store</a>
+        <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div></div>
+  </nav>
+  <div class="search-overlay"><div class="search-box"><input type="search" class="search-input" placeholder="Search phones..." /><button class="search-close">✕</button></div></div>
+  <div class="nav-drawer-overlay"></div>
+  <nav class="nav-drawer">
+    <ul class="nav-drawer-links">
+      <li><a href="index.html" class="nav-drawer-link"><span>Home</span></a></li>
+      <li><a href="smartphones.html" class="nav-drawer-link active"><span>Smartphones</span></a></li>
+      <li><a href="accessories.html" class="nav-drawer-link"><span>Accessories</span></a></li>
+      <li><a href="offers.html" class="nav-drawer-link"><span>Offers</span></a></li>
+      <li><a href="repair.html" class="nav-drawer-link"><span>Repair</span></a></li>
+      <li><a href="about.html" class="nav-drawer-link"><span>About</span></a></li>
+      <li><a href="contact.html" class="nav-drawer-link"><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="phones-hero">
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="breadcrumb reveal"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Smartphones</span></div>
+      <div class="section-label reveal delay-100">📱 All Phones</div>
+      <h1 class="reveal delay-200">Premium <span class="gradient-text">Smartphones</span></h1>
+      <p class="section-subtitle reveal delay-300">Latest iPhones, Samsung Galaxy, OnePlus, Google Pixel and more. All genuine with official warranty.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="phones-section">
+    <div class="container">
+      <!-- Filter Chips (Mobile) -->
+      <div class="filter-chips reveal" style="margin-bottom:var(--space-8);" data-target="#phones-grid">
+        <span class="chip active" data-filter="all">All</span>
+        <span class="chip" data-filter="Apple">Apple</span>
+        <span class="chip" data-filter="Samsung">Samsung</span>
+        <span class="chip" data-filter="OnePlus">OnePlus</span>
+        <span class="chip" data-filter="Google">Google</span>
+        <span class="chip" data-filter="Nothing">Nothing</span>
+        <span class="chip" data-filter="Vivo">Vivo</span>
+        <span class="chip" data-filter="OPPO">OPPO</span>
+        <span class="chip" data-filter="Realme">Realme</span>
+      </div>
+
+      <div class="phones-layout">
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar reveal-left">
+          <div class="filter-sidebar-title">Filter By</div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Brand</div>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Apple (12)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Samsung (18)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">OnePlus (8)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Google (5)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Nothing (4)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Vivo (10)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">OPPO (9)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Realme (11)</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Xiaomi (7)</span></label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Price Range</div>
+            <div class="filter-price-range">
+              <input type="number" class="price-input" placeholder="Min" />
+              <input type="number" class="price-input" placeholder="Max" />
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Storage</div>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">128GB</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">256GB</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">512GB</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">1TB</span></label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">RAM</div>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">8GB</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">12GB</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">16GB</span></label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Features</div>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">5G</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Fast Charging</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Wireless Charging</span></label>
+            <label class="filter-option"><input type="checkbox" class="filter-checkbox"> <span class="filter-option-label">Foldable</span></label>
+          </div>
+
+          <button class="btn btn-primary" style="width:100%;margin-top:var(--space-4);">Apply Filters</button>
+          <button class="btn btn-secondary" style="width:100%;margin-top:var(--space-3);">Reset</button>
+        </aside>
+
+        <!-- Products -->
+        <div>
+          <div class="phones-header">
+            <div class="phones-count">Showing <strong>84</strong> smartphones</div>
+            <select class="sort-select">
+              <option>Sort: Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Rating: High to Low</option>
+              <option>Newest First</option>
+            </select>
+          </div>
+
+          <div class="phones-grid" id="phones-grid">
+            <!-- iPhone 16 Pro Max -->
+            <article class="product-card tilt-card" data-brand="Apple">
+              <div class="product-card-image">
+                <div style="background:linear-gradient(135deg,#f0f0f8,#e0e0f0);height:100%;display:flex;align-items:center;justify-content:center;">
+                  <img src="assets/photos/product_iphone.svg" alt="iPhone 16 Pro Max" style="height:200px;width:auto;object-fit:contain;" loading="lazy"/>
+                </div>
+                <div class="product-card-badges"><span class="badge badge-gold">Best Seller</span></div>
+                <div class="product-card-actions">
+                  <button class="product-action-btn wishlist-btn" data-id="iphone-16-pm" aria-label="Wishlist"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-brand">Apple</div>
+                <h3 class="product-name">iPhone 16 Pro Max</h3>
+                <div class="product-specs"><span class="product-spec-tag">A18 Pro</span><span class="product-spec-tag">256GB</span><span class="product-spec-tag">5G</span></div>
+                <div class="product-rating"><div class="stars">★★★★★</div><span>4.9 (248)</span></div>
+                <div class="product-price-row"><div class="product-price"><span class="price-current">₹1,34,900</span><span class="price-original">₹1,49,900</span><span class="price-discount">10% OFF</span></div></div>
+                <div class="product-emi">No Cost EMI ₹11,242/mo</div>
+                <div class="product-card-footer">
+                  <button class="btn-buy" onclick="showToast('📱 Call us to buy!', 'success')">Buy Now</button>
+                  <button class="btn-compare compare-btn" data-id="iphone-16-pm" data-name="iPhone 16 Pro Max">Compare</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Samsung S25 Ultra -->
+            <article class="product-card tilt-card" data-brand="Samsung">
+              <div class="product-card-image">
+                <div style="background:linear-gradient(135deg,#f0f0f8,#e0e0f0);height:100%;display:flex;align-items:center;justify-content:center;">
+                  <img src="assets/photos/product_samsung.svg" alt="Samsung Galaxy S25 Ultra" style="height:200px;width:auto;object-fit:contain;" loading="lazy"/>
+                </div>
+                <div class="product-card-badges"><span class="badge badge-primary">New</span></div>
+                <div class="product-card-actions">
+                  <button class="product-action-btn wishlist-btn" data-id="s25-ultra" aria-label="Wishlist"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-brand">Samsung</div>
+                <h3 class="product-name">Galaxy S25 Ultra</h3>
+                <div class="product-specs"><span class="product-spec-tag">SD 8 Elite</span><span class="product-spec-tag">256GB</span><span class="product-spec-tag">S-Pen</span></div>
+                <div class="product-rating"><div class="stars">★★★★★</div><span>4.8 (195)</span></div>
+                <div class="product-price-row"><div class="product-price"><span class="price-current">₹1,29,999</span><span class="price-original">₹1,49,999</span><span class="price-discount">13% OFF</span></div></div>
+                <div class="product-emi">No Cost EMI ₹10,834/mo</div>
+                <div class="product-card-footer">
+                  <button class="btn-buy" onclick="showToast('📱 Call us to buy!', 'success')">Buy Now</button>
+                  <button class="btn-compare compare-btn" data-id="s25-ultra" data-name="Galaxy S25 Ultra">Compare</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- OnePlus 13 -->
+            <article class="product-card tilt-card" data-brand="OnePlus">
+              <div class="product-card-image">
+                <div style="background:linear-gradient(135deg,#f0f0f8,#e0e0f0);height:100%;display:flex;align-items:center;justify-content:center;">
+                  <img src="assets/photos/product_oneplus.svg" alt="OnePlus 13" style="height:200px;width:auto;object-fit:contain;" loading="lazy"/>
+                </div>
+                <div class="product-card-badges"><span class="badge badge-green">100W Fast Charge</span></div>
+                <div class="product-card-actions">
+                  <button class="product-action-btn wishlist-btn" data-id="op13" aria-label="Wishlist"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-brand">OnePlus</div>
+                <h3 class="product-name">OnePlus 13</h3>
+                <div class="product-specs"><span class="product-spec-tag">SD 8 Gen 3</span><span class="product-spec-tag">256GB</span><span class="product-spec-tag">6000mAh</span></div>
+                <div class="product-rating"><div class="stars">★★★★★</div><span>4.7 (156)</span></div>
+                <div class="product-price-row"><div class="product-price"><span class="price-current">₹69,999</span><span class="price-original">₹79,999</span><span class="price-discount">12% OFF</span></div></div>
+                <div class="product-emi">No Cost EMI ₹5,834/mo</div>
+                <div class="product-card-footer">
+                  <button class="btn-buy" onclick="showToast('📱 Call us to buy!', 'success')">Buy Now</button>
+                  <button class="btn-compare compare-btn" data-id="op13" data-name="OnePlus 13">Compare</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Nothing Phone 3 -->
+            <article class="product-card tilt-card" data-brand="Nothing">
+              <div class="product-card-image">
+                <div style="background:linear-gradient(135deg,#f0f0f8,#e0e0f0);height:100%;display:flex;align-items:center;justify-content:center;">
+                  <img src="assets/photos/product_nothing.svg" alt="Nothing Phone 3" style="height:200px;width:auto;object-fit:contain;" loading="lazy"/>
+                </div>
+                <div class="product-card-badges"><span class="badge badge-primary">Unique Design</span></div>
+                <div class="product-card-actions">
+                  <button class="product-action-btn wishlist-btn" data-id="np3" aria-label="Wishlist"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-brand">Nothing</div>
+                <h3 class="product-name">Nothing Phone (3)</h3>
+                <div class="product-specs"><span class="product-spec-tag">SD 8s Gen 3</span><span class="product-spec-tag">256GB</span><span class="product-spec-tag">Glyph</span></div>
+                <div class="product-rating"><div class="stars">★★★★★</div><span>4.6 (87)</span></div>
+                <div class="product-price-row"><div class="product-price"><span class="price-current">₹59,999</span><span class="price-original">₹64,999</span><span class="price-discount">8% OFF</span></div></div>
+                <div class="product-emi">No Cost EMI ₹4,999/mo</div>
+                <div class="product-card-footer">
+                  <button class="btn-buy" onclick="showToast('📱 Call us to buy!', 'success')">Buy Now</button>
+                  <button class="btn-compare compare-btn" data-id="np3" data-name="Nothing Phone 3">Compare</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Google Pixel 9 Pro -->
+            <article class="product-card tilt-card" data-brand="Google">
+              <div class="product-card-image">
+                <div style="background:linear-gradient(135deg,#f0f0f8,#e0e0f0);height:100%;display:flex;align-items:center;justify-content:center;">
+                  <img src="assets/photos/product_pixel.svg" alt="Google Pixel 9 Pro" style="height:200px;width:auto;object-fit:contain;" loading="lazy"/>
+                </div>
+                <div class="product-card-badges"><span class="badge badge-gold">AI Powered</span></div>
+                <div class="product-card-actions">
+                  <button class="product-action-btn wishlist-btn" data-id="pixel9pro" aria-label="Wishlist"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                </div>
+              </div>
+              <div class="product-card-body">
+                <div class="product-brand">Google</div>
+                <h3 class="product-name">Pixel 9 Pro</h3>
+                <div class="product-specs"><span class="product-spec-tag">Tensor G4</span><span class="product-spec-tag">256GB</span><span class="product-spec-tag">AI</span></div>
+                <div class="product-rating"><div class="stars">★★★★★</div><span>4.8 (112)</span></div>
+                <div class="product-price-row"><div class="product-price"><span class="price-current">₹1,09,999</span><span class="price-original">₹1,24,999</span><span class="price-discount">12% OFF</span></div></div>
+                <div class="product-emi">No Cost EMI ₹9,167/mo</div>
+                <div class="product-card-footer">
+                  <button class="btn-buy" onclick="showToast('📱 Call us to buy!', 'success')">Buy Now</button>
+                  <button class="btn-compare compare-btn" data-id="pixel9pro" data-name="Pixel 9 Pro">Compare</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Placeholder cards showing catalog depth -->
+            <article class="product-card" data-brand="Samsung" style="background:var(--c-dark-3);border-style:dashed;">
+              <div style="padding:var(--space-12);text-align:center;display:flex;flex-direction:column;align-items:center;gap:var(--space-4);">
+                <div style="font-size:3rem;">📦</div>
+                <div style="font-weight:700;color:var(--c-white);">80+ More Phones</div>
+                <p class="text-muted text-sm">Visit our store or call us to see our complete inventory of 500+ devices.</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top:var(--space-2);">Contact Store</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="text-align:center;padding:var(--space-10) 0;border-bottom:1px solid var(--glass-border);margin-bottom:var(--space-6);">
+        <a href="index.html" style="display:inline-block;"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza" style="height:48px;width:auto;object-fit:contain;background:rgba(255,255,255,0.95);border-radius:8px;padding:4px 12px;" /></a>
+      </div>
+      <div class="footer-bottom"><p class="footer-copyright">© 2024 Sri Lakshmi Plaza. All rights reserved.</p><div class="footer-legal"><a href="index.html">Home</a><a href="contact.html">Contact</a></div></div>
+    </div>
+  </footer>
+
+  <div id="whatsapp-float"><a href="https://wa.me/919885125978" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a></div>
+  <button id="back-to-top" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  <div id="cookie-banner"><p>🍪 We use cookies.</p><div class="cookie-actions"><button id="accept-cookies" class="btn btn-primary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Accept</button><button id="decline-cookies" class="btn btn-secondary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Decline</button></div></div>
+
+  <div class="compare-bar">
+    <div class="container"><div class="compare-bar-inner">
+      <div class="compare-items"><div class="compare-slot">Add Phone</div><div class="compare-slot">Add Phone</div><div class="compare-slot">Add Phone</div></div>
+      <button class="btn btn-primary compare-now-btn" style="flex-shrink:0;">Compare Now</button>
+      <button class="btn btn-secondary compare-clear-btn" style="flex-shrink:0;">Clear</button>
+    </div></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

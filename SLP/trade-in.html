@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Trade-In & Exchange — Sri Lakshmi Plaza | Get Best Value for Old Phone in Vijayawada</title>
+  <meta name="description" content="Get the best trade-in value for your old smartphone at Sri Lakshmi Plaza, Vijayawada. Transparent evaluation, instant exchange, best market prices."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <style>
+    .tradein-hero{min-height:50vh;display:flex;align-items:center;padding:calc(var(--space-24)+80px) 0 var(--space-16);background:linear-gradient(135deg,#000 0%,#0a0014 40%);position:relative;overflow:hidden;}
+    .tradein-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 30%,rgba(16,185,129,.12) 0%,transparent 70%);}
+    .tradein-content{padding:var(--section-pad);}
+    .tradein-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:start;}
+    .tradein-form{background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);padding:var(--space-10);}
+    .form-group{margin-bottom:var(--space-5);}
+    .form-label{display:block;font-size:var(--text-sm);font-weight:600;color:var(--c-gray-pale);margin-bottom:var(--space-2);}
+    .form-input,.form-select{width:100%;padding:var(--space-4) var(--space-5);background:var(--c-dark-3);border:1px solid var(--c-dark-border);border-radius:var(--r-lg);color:var(--c-white);font-family:var(--font-sans);font-size:var(--text-sm);outline:none;transition:border-color var(--t-base);}
+    .form-input:focus,.form-select:focus{border-color:var(--c-blue);box-shadow:0 0 0 3px rgba(37,99,235,.15);}
+    .form-input::placeholder{color:var(--c-gray);}
+    .condition-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3);margin-top:var(--space-2);}
+    .condition-btn{padding:var(--space-3) var(--space-4);background:var(--c-dark-3);border:1px solid var(--c-dark-border);border-radius:var(--r-lg);font-size:var(--text-sm);color:var(--c-gray-light);cursor:pointer;text-align:center;transition:all var(--t-base);font-family:var(--font-sans);}
+    .condition-btn.selected,.condition-btn:hover{background:rgba(37,99,235,.15);border-color:rgba(37,99,235,.4);color:var(--c-blue-light);}
+    .how-it-works{background:var(--c-dark-2);padding:var(--section-pad);}
+    .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-6);}
+    .step-card{background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-2xl);padding:var(--space-8);text-align:center;}
+    .step-number{width:56px;height:56px;border-radius:50%;background:var(--grad-primary);display:flex;align-items:center;justify-content:center;font-size:var(--text-xl);font-weight:900;color:white;margin:0 auto var(--space-5);}
+    .brands-accepted{padding:var(--section-pad);}
+    .brands-list{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-8);}
+    .brand-pill{padding:var(--space-2) var(--space-5);background:var(--c-dark-card);border:1px solid var(--c-dark-border);border-radius:var(--r-full);font-size:var(--text-sm);color:var(--c-gray-light);transition:all var(--t-base);}
+    .brand-pill:hover{background:rgba(37,99,235,.1);border-color:rgba(37,99,235,.3);color:var(--c-blue-light);}
+    @media(max-width:768px){.tradein-grid{grid-template-columns:1fr;}.steps-grid{grid-template-columns:repeat(2,1fr);}}
+  </style>
+</head>
+<body>
+  <div id="loading-screen"><div class="loader-logo">Sri Lakshmi Plaza</div><div class="loader-bar"><div class="loader-bar-fill"></div></div><div class="loader-text">Loading...</div></div>
+  <div id="scroll-progress"></div>
+  <div id="cursor-dot"></div><div id="cursor-outline"></div>
+
+  <nav class="navbar"><div class="container"><div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza Logo" class="nav-logo-img" /></a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="smartphones.html" class="nav-link">Smartphones</a></li>
+      <li><a href="accessories.html" class="nav-link">Accessories</a></li>
+      <li><a href="offers.html" class="nav-link">Offers</a></li>
+      <li><a href="trade-in.html" class="nav-link active">Trade-In</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-search-btn" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <a href="contact.html" class="nav-cta">Visit Store</a>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></div></nav>
+  <div class="search-overlay"><div class="search-box"><input type="search" class="search-input" placeholder="Search..."/><button class="search-close">✕</button></div></div>
+  <div class="nav-drawer-overlay"></div>
+  <nav class="nav-drawer"><ul class="nav-drawer-links">
+    <li><a href="index.html" class="nav-drawer-link"><span>Home</span></a></li>
+    <li><a href="smartphones.html" class="nav-drawer-link"><span>Smartphones</span></a></li>
+    <li><a href="trade-in.html" class="nav-drawer-link active"><span>Trade-In</span></a></li>
+    <li><a href="offers.html" class="nav-drawer-link"><span>Offers</span></a></li>
+    <li><a href="contact.html" class="nav-drawer-link"><span>Contact</span></a></li>
+  </ul></nav>
+
+  <!-- Hero -->
+  <section class="tradein-hero">
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="breadcrumb reveal"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Trade-In</span></div>
+      <div class="section-label reveal delay-100" style="background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.3);color:#10b981;">🔄 Exchange Program</div>
+      <h1 class="reveal delay-200" style="max-width:700px;">Get the <span class="gradient-text">Best Value</span> for Your Old Phone</h1>
+      <p class="section-subtitle reveal delay-300">Transparent evaluation, no hidden deductions, instant exchange. The fairest trade-in program in Vijayawada.</p>
+      <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;margin-top:var(--space-8);" class="reveal delay-400">
+        <div style="display:flex;align-items:center;gap:var(--space-3);background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.2);border-radius:var(--r-full);padding:var(--space-3) var(--space-5);">
+          <span style="color:#10b981;font-size:var(--text-lg);">✓</span>
+          <span style="font-size:var(--text-sm);font-weight:600;">No Deductions</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:var(--space-3);background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2);border-radius:var(--r-full);padding:var(--space-3) var(--space-5);">
+          <span style="color:var(--c-blue-light);font-size:var(--text-lg);">⚡</span>
+          <span style="font-size:var(--text-sm);font-weight:600;">Instant Exchange</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:var(--space-3);background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2);border-radius:var(--r-full);padding:var(--space-3) var(--space-5);">
+          <span style="color:#f59e0b;font-size:var(--text-lg);">💰</span>
+          <span style="font-size:var(--text-sm);font-weight:600;">Best Market Price</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trade-In Content -->
+  <section class="tradein-content">
+    <div class="container">
+      <div class="tradein-grid">
+        <!-- Info Side -->
+        <div class="reveal-left">
+          <div class="section-label" style="margin-bottom:var(--space-5);">💎 Why Trade-In With Us</div>
+          <h2 class="section-title" style="margin-bottom:var(--space-6);">Transparent & <span class="gradient-text">Fair Evaluation</span></h2>
+          <div style="display:flex;flex-direction:column;gap:var(--space-6);">
+            <div class="store-feature">
+              <div class="store-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <div class="store-feature-text">
+                <h4>Best Market Price</h4>
+                <p>We offer the highest trade-in values for your old phones. Our prices are updated daily based on current market rates.</p>
+              </div>
+            </div>
+            <div class="store-feature">
+              <div class="store-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="store-feature-text">
+                <h4>Instant Evaluation</h4>
+                <p>Get your phone evaluated in just 15 minutes. No waiting, no delays — instant trade-in quote on the spot.</p>
+              </div>
+            </div>
+            <div class="store-feature">
+              <div class="store-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="store-feature-text">
+                <h4>No Hidden Deductions</h4>
+                <p>What we quote is what you get. Completely transparent process with no surprise deductions at the last moment.</p>
+              </div>
+            </div>
+            <div class="store-feature">
+              <div class="store-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/></svg>
+              </div>
+              <div class="store-feature-text">
+                <h4>Extra ₹5,000 Exchange Bonus</h4>
+                <p>Get ₹5,000 additional exchange bonus when you buy a phone above ₹50,000 with trade-in. Limited period offer!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trade-In Form -->
+        <div class="tradein-form reveal-right">
+          <div class="section-label" style="margin-bottom:var(--space-5);">📱 Get Your Quote</div>
+          <h3 style="font-size:var(--text-2xl);font-weight:800;margin-bottom:var(--space-6);">Estimate Trade-In <span class="gradient-text">Value</span></h3>
+          <form id="tradein-form">
+            <div class="form-group">
+              <label class="form-label">Phone Brand *</label>
+              <select class="form-select" required>
+                <option value="">Select Brand</option>
+                <option>Apple</option><option>Samsung</option><option>OnePlus</option>
+                <option>Google</option><option>Vivo</option><option>OPPO</option>
+                <option>Realme</option><option>Xiaomi</option><option>Nothing</option><option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Model Name *</label>
+              <input type="text" class="form-input" placeholder="e.g. iPhone 14 Pro Max, Galaxy S23" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Storage</label>
+              <select class="form-select">
+                <option>64GB</option><option>128GB</option><option>256GB</option><option>512GB</option><option>1TB</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Condition *</label>
+              <div class="condition-grid">
+                <button type="button" class="condition-btn selected">✨ Like New</button>
+                <button type="button" class="condition-btn">👍 Good</button>
+                <button type="button" class="condition-btn">⚠️ Fair</button>
+                <button type="button" class="condition-btn">❌ Damaged</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Your Name *</label>
+              <input type="text" class="form-input" placeholder="Your full name" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-input" placeholder="+91 98851 25978" required/>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:var(--space-5);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Get Best Price Estimate
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">🔄 Process</div>
+        <h2 class="section-title reveal delay-100">How <span class="gradient-text">Trade-In Works</span></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">1</div>
+          <h4 style="font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);">Bring Your Phone</h4>
+          <p class="text-muted text-sm">Walk into our store with your old phone and original accessories (box, charger).</p>
+        </div>
+        <div class="step-card reveal delay-100">
+          <div class="step-number">2</div>
+          <h4 style="font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);">Instant Evaluation</h4>
+          <p class="text-muted text-sm">Our expert assesses your phone's condition and gives you the best trade-in quote in 15 minutes.</p>
+        </div>
+        <div class="step-card reveal delay-200">
+          <div class="step-number">3</div>
+          <h4 style="font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);">Pick Your New Phone</h4>
+          <p class="text-muted text-sm">Choose your new smartphone from our wide selection of 500+ devices.</p>
+        </div>
+        <div class="step-card reveal delay-300">
+          <div class="step-number">4</div>
+          <h4 style="font-weight:700;color:var(--c-white);margin-bottom:var(--space-3);">Instant Upgrade</h4>
+          <p class="text-muted text-sm">The trade-in value is deducted from your new phone's price. Walk out with your new device!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Accepted -->
+  <section class="brands-accepted">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal">📋 Accepted Brands</div>
+        <h2 class="section-title reveal delay-100">We Accept <span class="gradient-text">All Major Brands</span></h2>
+      </div>
+      <div class="brands-list" style="justify-content:center;" class="reveal">
+        <span class="brand-pill">🍎 Apple</span>
+        <span class="brand-pill">🌀 Samsung</span>
+        <span class="brand-pill">⊕ OnePlus</span>
+        <span class="brand-pill">◉ Vivo</span>
+        <span class="brand-pill">● OPPO</span>
+        <span class="brand-pill">◈ Realme</span>
+        <span class="brand-pill">Mi Xiaomi</span>
+        <span class="brand-pill">G Google</span>
+        <span class="brand-pill">∅ Nothing</span>
+        <span class="brand-pill">M Motorola</span>
+        <span class="brand-pill">Nokia</span>
+        <span class="brand-pill">Asus</span>
+        <span class="brand-pill">Infinix</span>
+        <span class="brand-pill">Tecno</span>
+        <span class="brand-pill">Lava</span>
+        <span class="brand-pill">+ More Brands</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container">
+    <div style="text-align:center;padding:var(--space-10) 0;border-bottom:1px solid var(--glass-border);margin-bottom:var(--space-6);">
+      <a href="index.html" style="display:inline-block;"><img src="assets/images/slp-logo.png" alt="Sri Lakshmi Plaza" style="height:48px;width:auto;object-fit:contain;background:rgba(255,255,255,0.95);border-radius:8px;padding:4px 12px;" /></a>
+    </div>
+    <div class="footer-bottom"><p class="footer-copyright">© 2024 Sri Lakshmi Plaza. All rights reserved.</p><div class="footer-legal"><a href="index.html">Home</a><a href="contact.html">Contact</a></div></div>
+  </div></footer>
+
+  <div id="whatsapp-float"><a href="https://wa.me/919885125978?text=Hello!%20I%20want%20to%20trade-in%20my%20phone." target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a></div>
+  <button id="back-to-top" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  <div id="cookie-banner"><p>🍪 We use cookies.</p><div class="cookie-actions"><button id="accept-cookies" class="btn btn-primary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Accept</button><button id="decline-cookies" class="btn btn-secondary" style="padding:0.5rem 1.25rem;font-size:0.875rem;">Decline</button></div></div>
+  <script src="js/main.js"></script>
+  <script>
+    // Condition buttons
+    document.querySelectorAll('.condition-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.condition-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+    document.getElementById('tradein-form')?.addEventListener('submit', e => {
+      e.preventDefault();
+      showToast('📞 We\'ll call you with the best quote within 30 minutes!', 'success');
+    });
+  </script>
+</body>
+</html>
+
+
+

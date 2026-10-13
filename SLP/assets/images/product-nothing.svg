@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="580" viewBox="0 0 300 580">
+  <defs>
+    <linearGradient id="ntbody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5"/>
+      <stop offset="50%" stop-color="#ebebeb"/>
+      <stop offset="100%" stop-color="#d8d8d8"/>
+    </linearGradient>
+    <filter id="ntshadow">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+
+  <!-- Phone body - translucent white/grey -->
+  <rect x="20" y="10" width="260" height="560" rx="30" ry="30" fill="url(#ntbody)" filter="url(#ntshadow)"/>
+  <rect x="20" y="10" width="260" height="560" rx="30" ry="30" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
+
+  <!-- Glyph Interface dots - Nothing's signature -->
+  <!-- Top row glyph -->
+  <circle cx="80" cy="50" r="5" fill="rgba(255,50,50,0.8)"/>
+  <circle cx="95" cy="50" r="5" fill="rgba(255,50,50,0.6)"/>
+  <circle cx="110" cy="50" r="5" fill="rgba(255,50,50,0.4)"/>
+  <circle cx="125" cy="50" r="5" fill="rgba(255,50,50,0.2)"/>
+
+  <!-- Glyph lines on back (visible through translucent) -->
+  <line x1="230" y1="80" x2="230" y2="200" stroke="rgba(255,50,50,0.3)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="245" y1="100" x2="245" y2="180" stroke="rgba(255,50,50,0.2)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="237" cy="220" r="12" fill="none" stroke="rgba(255,50,50,0.3)" stroke-width="3"/>
+
+  <!-- Screen - dark -->
+  <rect x="28" y="20" width="244" height="540" rx="24" ry="24" fill="#0a0a0a"/>
+
+  <!-- Punch hole camera -->
+  <circle cx="150" cy="44" r="7" fill="#1a1a1a"/>
+
+  <!-- Time - minimal -->
+  <text x="150" y="160" font-family="Arial,sans-serif" font-size="60" font-weight="100" fill="white" text-anchor="middle">9:41</text>
+  <text x="150" y="188" font-family="Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">Saturday, 5 July</text>
+
+  <!-- Nothing dot matrix pattern -->
+  <g fill="rgba(255,255,255,0.07)">
+    <circle cx="80" cy="280" r="3"/>  <circle cx="100" cy="280" r="3"/> <circle cx="120" cy="280" r="3"/>
+    <circle cx="140" cy="280" r="3"/> <circle cx="160" cy="280" r="3"/> <circle cx="180" cy="280" r="3"/>
+    <circle cx="200" cy="280" r="3"/> <circle cx="220" cy="280" r="3"/>
+    <circle cx="80" cy="300" r="3"/>  <circle cx="100" cy="300" r="3"/> <circle cx="120" cy="300" r="3"/>
+    <circle cx="140" cy="300" r="3"/> <circle cx="160" cy="300" r="3"/> <circle cx="180" cy="300" r="3"/>
+    <circle cx="200" cy="300" r="3"/> <circle cx="220" cy="300" r="3"/>
+  </g>
+
+  <!-- Nothing logo -->
+  <text x="150" y="255" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.5)" text-anchor="middle" letter-spacing="6">nothing</text>
+
+  <!-- App icons - minimal style -->
+  <rect x="50" y="340" width="44" height="44" rx="22" fill="rgba(255,255,255,0.1)"/>
+  <rect x="110" y="340" width="44" height="44" rx="22" fill="rgba(255,255,255,0.1)"/>
+  <rect x="170" y="340" width="44" height="44" rx="22" fill="rgba(255,255,255,0.1)"/>
+  <rect x="230" y="340" width="44" height="44" rx="22" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Dock -->
+  <rect x="36" y="460" width="228" height="64" rx="32" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="72" cy="492" r="20" fill="rgba(255,50,50,0.5)"/>
+  <circle cx="122" cy="492" r="20" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="172" cy="492" r="20" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="222" cy="492" r="20" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Camera -->
+  <circle cx="70" cy="65" r="22" fill="#0a0a0a"/>
+  <circle cx="70" cy="65" r="15" fill="#111"/>
+  <circle cx="70" cy="65" r="8" fill="#050505"/>
+  <circle cx="64" cy="59" r="2.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="108" cy="58" r="10" fill="#0a0a0a"/>
+  <circle cx="108" cy="58" r="6" fill="#111"/>
+  <text x="70" y="100" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,80,80,0.5)" text-anchor="middle">50MP Glyph</text>
+
+  <text x="150" y="550" font-family="Arial,sans-serif" font-size="11" fill="rgba(150,150,150,0.7)" text-anchor="middle">Nothing Phone (3)</text>
+</svg>
